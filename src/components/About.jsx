@@ -7,7 +7,7 @@ return (
       <div className='max-w-[800px] mt-[-70px] w-full h-screen mx-auto text-left flex flex-col justify-center px-4'>
     
         <div className='flex flex-col justify-center'>
-        <div className="rounded-xl  overflow-hidden shadow-xl max-w-[800px] transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300">
+        <div className="rounded-xl  overflow-hidden shadow-xl max-w-[800px] ">
         <div className=" group  bg-[#21252b] h-10 rounded-t-xl">
         <button className='bg-[#f96256] w-[15px] h-[15px] rounded-full font-medium ml-4 my-3'></button>
         <button className='bg-[#fdbc3d] w-[15px] h-[15px] rounded-full font-medium ml-2 my-3'></button>
@@ -20,7 +20,6 @@ return (
             <p className="mt-2 font-light text-white">currentLocation</p>
             </div>
             <p className="font-light text-[#d19a66] ml-3">'Makati City, Philippines'</p>
-           
             <div className='flex'>
             <p className="mt-2 text-white pr-2">&gt;  </p>
             <p className="mt-2 font-light text-white">contactInfo</p>

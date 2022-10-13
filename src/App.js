@@ -6,7 +6,7 @@ import Side from './components/Side'
 
 function App() {
   return (
-    <div className="font-mono">
+    <div className="font-mono bg-[#282c34]">
      <Navbar />
       <Head />
       <About />
