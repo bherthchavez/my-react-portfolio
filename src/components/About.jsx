@@ -17,31 +17,31 @@ return (
             <div className="text-start px-3 pb-6 pt-2">
             <div className='flex'>
             <p className="mt-2 text-white pr-2">&gt;  </p>
-            <p className="mt-2 font-light text-white">Julbert.currentLocation</p>
+            <p className="mt-2 font-light text-white">currentLocation</p>
             </div>
             <p className="font-light text-[#d19a66] ml-3">'Makati City, Philippines'</p>
            
             <div className='flex'>
             <p className="mt-2 text-white pr-2">&gt;  </p>
-            <p className="mt-2 font-light text-white">Julbert.contactInfo</p>
+            <p className="mt-2 font-light text-white">contactInfo</p>
             </div>
             <p className="font-light text-[#d19a66] ml-3">['bherthchavez@gmail.com', 'LinkedIn, 'github']</p>
            
             <div className='flex'>
             <p className="mt-2 text-white pr-2">&gt;  </p>
-            <p className="mt-2 font-light text-white">Julbert.resume</p>
+            <p className="mt-2 font-light text-white">my.resume</p>
             </div>
             <p className="font-light text-[#d19a66] ml-3">'Julbert.pdf'</p>
 
             <div className='flex'>
             <p className="mt-2 text-white pr-2">&gt;  </p>
-            <p className="mt-2 font-light text-white"> Julbert.education</p>
+            <p className="mt-2 font-light text-white"> my.education</p>
             </div>
             <p className="font-light text-[#d19a66] ml-3"> 'BS in Information Technology - Asian Development Foundation College of Tacloban City, Philippines'</p>
            
             <div className='flex'>
             <p className="mt-2 text-white pr-2">&gt;  </p>
-            <p className="mt-2 font-light text-white"> Julbert.skills</p>
+            <p className="mt-2 font-light text-white"> my.skills</p>
             </div>
             <p className="font-light text-[#d19a66] ml-3">['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Tailwind', 'React', 'Node JS', 'Mongo DB', 'MySQL', 'git']</p>
 

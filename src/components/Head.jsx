@@ -7,14 +7,14 @@ const Head = () => {
     <div className='text-white'>
       <div className='max-w-[800px] mt-[-70px] w-full h-screen mx-auto text-left flex flex-col justify-center px-4'>
       <div className='flex flex-col justify-center items-start mb-5'>
-          <img className="border-2 border-[#d19a66] h-32 w-32 rounded-full shadow-xl transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300" src="https://lh3.googleusercontent.com/a/ALm5wu39LclLADzpn2pmNLeBeZsbMhGTuw870zo6zik_0g=s360-p-rw-no" alt='/' />
+          <img className="grayscale  border-[#d19a66] mt-[200px] h-32 w-32 rounded-2xl shadow-xl transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300" src="https://media-exp1.licdn.com/dms/image/C5103AQEfmUjW0YbBFQ/profile-displayphoto-shrink_400_400/0/1539590813602?e=1671062400&v=beta&t=tbytMeBZu5DExuIsiJlrjbUNupktCfMBBkgK6XNsbuw" alt='/' />
         </div>
       <div className='max-w-[1240px]'>
         <div className='w-full my-4'>
             <p className='text-[#d19a66] md:text-lg'>
               Hi, my name is </p>
               <div className='flex justify-start items-center'>
-              <p className='md:text-6xl sm:text-6xl text-4xl py-2 font-bold text-WHITE'>
+              <p className='md:text-6xl sm:text-2xl text-4xl py-2 font-bold text-WHITE'>
               &gt;
               </p>
               <Typed
