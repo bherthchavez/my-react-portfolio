@@ -1,27 +1,27 @@
 @tailwind base;
 :root {
-    --primary: #24282e;
-    --secondary: #434851;
-  }
+  --primary: #24282e;
+  --secondary: #434851;
+}
 /* Firefox */
 * {
-    scrollbar-width: thin;
-    scrollbar-color: var(--secondary) var(--primary);
-  }
-  
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  *::-webkit-scrollbar-track {
-    background: var(--primary);
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    background-color: var(--secondary);
-    border-radius: 14px;
-    border: 3px solid var(--primary);
-  }
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 14px;
+  border: 3px solid var(--primary);
+}
 @tailwind components;
 @tailwind utilities;

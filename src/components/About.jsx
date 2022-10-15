@@ -3,7 +3,7 @@ import Typed from 'react-typed';
 const About = () => {
   return (
     <div name='about' className='w-full h-screen text-gray-300'>
-      <div className='max-w-[800px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+      <div className='max-w-[800px] mx-auto p-4 flex flex-col justify-center h-full'>
         <div className='flex flex-col justify-center'>
           <div className="rounded-xl overflow-hidden shadow-xl max-w-[800px] ">
             <div className=" bg-[#21252b] h-10 rounded-t-xl">
@@ -45,7 +45,6 @@ const About = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
