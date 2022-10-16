@@ -5,7 +5,11 @@ import {
 import { FaLinkedinIn } from 'react-icons/fa';
 
 import { BsFillPersonLinesFill, BsInstagram } from 'react-icons/bs';
+import Resume from '../assets/resume.pdf';
+
+
 const Side = () => {
+
 
   return (
     <div>
@@ -29,7 +33,7 @@ const Side = () => {
               </a>
             </li>
             <li className='w-auto h-[50px] flex justify-between items-center'>
-              <a href='/' className='flex justify-between items-center w-full text-gray-500 hover:text-[#d19a66] transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300'>
+              <a href={Resume} className='flex justify-between items-center w-full text-gray-500 hover:text-[#d19a66] transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300' download>
                 <BsFillPersonLinesFill size={20} className='m-4 shadow-xl' />
               </a>
             </li>

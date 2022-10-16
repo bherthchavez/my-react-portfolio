@@ -11,9 +11,7 @@ function Head() {
 
     <div name='home' className='text-white'>
       <div className='max-w-[800px] mt-[-70px] w-full h-screen mx-auto text-left flex flex-col justify-center px-4'>
-
-        <img src={mypic} alt='/' className='border-[#d19a66] border-2 mt-[200px] h-32 w-32 rounded-2xl shadow-2xl grayscale hover:grayscale-[75%] transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300' />
-
+        <img src={mypic} alt='Me' className='border-[#d19a66] border-2 mt-[200px] h-32 w-32 rounded-2xl shadow-2xl grayscale hover:grayscale-[75%] transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300' />
         <div className='max-w-[1240px]'>
           <div className='w-full my-4'>
             <p className='text-[#d19a66] md:text-lg'>
@@ -33,15 +31,16 @@ function Head() {
             </p>
           </div>
         </div>
-        <p className=' text-gray-500 py-5'> I`m a full-stack developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building Cloud based ERP applications.</p>
-        <Link to='skills' smooth={true} duration={500}>
-          <button className='md:text-base sm:text-sm border-2 group px-6 flex justify-end items-center border-[#d19a66] w-auto rounded-md font-medium my-6 py-3 text-[#d19a66] hover:bg-[#343943] hover:border-[#343943]'>
+        <p className=' text-gray-500 pt-2 pb-10 text-sm md:text-base'> Building and designing are two of my favorite things to do.
+          I recently decided to become a full stack web developer because I want people to see and use my work. My previous jobs were graphic designer and 2d animator, but my first job as a software developer was in 2015.</p>
+        <Link className='w-64 h-12 mb-16 md:mb-0' to='skills' smooth={true} duration={500}>
+          <span className='md:text-base text-sm border-[1px] md:border-2 group px-6 flex justify-between text-center items-center border-[#d19a66] w-64 rounded-md font-medium  py-3 text-[#d19a66] hover:bg-[#343943] hover:border-[#343943] cursor-pointer'>
             Chek out my skills!
             <span className='group-hover:rotate-90 duration-300'>
               <HiArrowNarrowRight className='ml-3 ' />
             </span>
 
-          </button>
+          </span>
           </Link>
       </div>
 

@@ -4,10 +4,10 @@ import Acc5 from '../assets/el-5.PNG';
 
 const Skills = () => {
     return (
-        <div name='projects' className='w-full h-screen text-gray-300 mt-16 md:mt-0'>
+        <div name='projects' className='w-full h-screen text-gray-300 mt-28 md:mt-0'>
             <div className='max-w-[800px] mx-auto p-4 flex flex-col justify-center h-full'>
                 <div>
-                    <p className='text-2xl md:text-4xl font-bold inline'>Current Projects</p>
+                    <p className='text-2xl md:text-3xl font-bold inline'>Current Projects</p>
                     <p className='py-1 md:py-4 text-sm md:text-base'>(more coming soon)</p>
                 </div>
                 <div className='flex flex-col justify-center'>
@@ -44,11 +44,10 @@ const Skills = () => {
                                      </ul>
                                      </div>
                                      <div className='h-auto text-start  mx-2 pt-3'>
-                                   
-                                        <p className='text-gray-500'> /* EL - Accounting Cloud Based */ </p>
+                                        <p className='text-gray-500'> {'/* EL - Accounting Cloud Based */'} </p>
                                         <div className='flex'>
                                         <p className='text-[#4888f0] md:mt-[25px]'> #EL-ACC </p>
-                                        <p className='text-gray-300 ml-2 '>  {'{'} </p>
+                                        <p className='text-gray-300 ml-2 md:mt-[25px]'>  {'{'} </p>
                                         </div>
                                         <div className='flex'>
                                             <p className='text-[#d6a23b] ml-1 md:ml-7 mt-[15px] '> project-for: </p>
@@ -59,27 +58,25 @@ const Skills = () => {
                                             <p className='text-gray-300 ml-1 mt-[3px] '> Doha, Qatar, </p>
                                          </div>
                                          <div className='flex'>
-                                            <p className='text-[#d6a23b] ml-1 md:ml-7 mt-[10px] '> description: </p>
-                                            <p className='text-gray-300 ml-1 mt-[10px] '> tracking the income  </p>
+                                            <p className='text-[#d6a23b] ml-1 md:ml-7 mt-[15px] '> description: </p>
+                                            <p className='text-gray-300 ml-1 mt-[15px] '> tracking the income  </p>
                                          </div>
-                                         <p className='text-gray-300 ml-1 md:ml-7 mt-[3px] '> and expenses of business bank account's, as well as the approval and printing of created bills and payment vouchers, </p>
+                                         <p className='text-gray-300 ml-1 md:ml-7'> and expenses of business bank accounts, as well as the approval and printing of created bills and payment vouchers, </p>
                                          <div className='flex'>
-                                            <p className='text-[#d6a23b] ml-1 md:ml-7 mt-[10px] '> language: </p>
-                                            <p className='text-gray-300 ml-1 mt-[10px] '> NODE JS, EXPRESS </p>
+                                            <p className='text-[#d6a23b] ml-1 md:ml-7 mt-[17px] '> language: </p>
+                                            <p className='text-gray-300 ml-1 mt-[17px] '> NODE JS, EXPRESS </p>
                                          </div>
                                          <p className='text-gray-300 ml-1  md:ml-7 mt-[3px] '> BOOTSTRAP, MONGO DB, HEROKU, </p>
-                                         <p className='text-gray-00 ml-3 mt-[25px]'>  {'};'} </p>
+                                         <p className='text-gray-00 ml-3 mt-[20px]'>  {'};'} </p>
                                     
                                      </div>
                                   </div>
                                 </div>
 
-                                <div className='h-auto'>
+                                <div className='h-auto m-2 md:m-0'>
                                     <div className='relative'>
-                                        <img className='w-17 h-17 mx-0 rotate-10 scale-[85%] translate-x-20 skew-x-30 opacity-50 hover:opacity-100 hover:transform-none' src={Acc1} alt="/" />
-                                        {/* <img className='w-17 h-17 mx-0 rotate-10 scale-75 translate-x-20 skew-x-30 opacity-50 hover:opacity-100 hover:transform-none' src={Acc1} alt="/" /> */}
-                                        <img className='w-17 h-17 mx-0 absolute top-32 scale-75 translate-x-20 skew-x-30 opacity-50 hover:opacity-100 hover:transform-none' src={Acc5} alt="/" />
-                                        {/* <p className='ml-2 text-gray-400 text-sm pt-1'>react.js</p> */}
+                                        <img className='w-17 h-17 md:rotate-10 rounded-2xl border-2 border-gray-700 md:scale-[85%] md:translate-x-20 md:skew-x-30 md:opacity-70 hover:opacity-100 hover:transform-none' src={Acc1} alt="/" />
+                                        <img className='w-17 h-17 mx-0 absolute rounded-2xl border-2 border-gray-700 opacity-0 top-32 md:scale-75 md:translate-x-20 md:skew-x-30 md:opacity-70 md:hover:opacity-100 md:hover:transform-none' src={Acc5} alt="/" />
                                     </div>
                                 
                                 </div>

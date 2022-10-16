@@ -14,14 +14,22 @@ import Heroku from '../assets/heroku.png';
 import Netlify from '../assets/netlify.png';
 import MySQL from '../assets/mysql.png';
 import Wordpress from '../assets/wordpress.png';
+import Premiere from '../assets/Premiere.png';
+import Ae from '../assets/ae.png';
+import Ps from '../assets/ps.png';
+import Xd from '../assets/xd.png';
+import Jquery from '../assets/jquery.png';
+import PHp from '../assets/PHP.png';
+import Typescript from '../assets/Typescript.png';
+import Express from '../assets/express.png';
 
 const Skills = () => {
     return (
-        <div name='skills' className='w-full h-screen text-gray-300 mt-16 md:mt-0'>
+        <div name='skills' className='w-full h-screen text-gray-300 mt-24 md:mt-0'>
             <div className='max-w-[800px] mx-auto p-4 flex flex-col justify-center h-full'>
                 <div>
-                    <p className='text-2xl md:text-4xl font-bold inline'>Skills</p>
-                    <p className='py-1 md:py-4 text-sm md:text-base'> These are the technologies I've worked with</p>
+                    <p className='text-2xl md:text-3xl font-bold inline'>Skills</p>
+                    <p className='py-1 md:py-4 text-sm md:text-base '> These are the technologies I've worked with</p>
                 </div>
                 <div className='flex flex-col justify-center'>
                     <div className="rounded-xl overflow-hidden shadow-xl max-w-[800px] ">
@@ -32,73 +40,128 @@ const Skills = () => {
                         </div>
                         <div className="bg-[#343943]">
                             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 pb-6">
-                                <div className='h-auto px-4  pt-3'>
-                                    <div className='flex'>
+                                <div className='h-auto px-4  pt-3 text-xs'>
+                                    <div className='flex items-center'>
                                         <img className='w-7 h-7 mx-0' src={Folder} alt="HTML icon" />
-                                        <p className='ml-2 text-[#f19947] text-sm mt-2 md:mt-0 md:text-lg'>my-skills</p>
+                                        <p className='ml-2 text-[#f19947] text-xs mt-2 md:mt-0 md:text-sm'>Programming Languages</p>
                                     </div>
                                     <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={HTML} alt="html icon" />
-                                        <p className='ml-2 text-gray-400 text-sm pt-1'>html</p>
+                                        <p className='ml-2 text-gray-400  pt-1'>html</p>
                                     </div>
                                     <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={CSS} alt="css icon" />
-                                        <p className='ml-2 text-gray-400 text-sm pt-1'>css</p>
+                                        <p className='ml-2 text-gray-400  pt-1'>css</p>
+                                    </div>
+                                    <div className='flex ml-3 my-4'>
+                                        <img className='w-7 h-7 mx-0' src={Typescript} alt="Typescript icon" />
+                                        <p className='ml-2 text-gray-400 pt-1'>typescript</p>
                                     </div>
                                     <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={JavaScript} alt="javascript icon" />
-                                        <p className='ml-2 text-gray-400 text-sm pt-1'>javascript</p>
+                                        <p className='ml-2 text-gray-400  pt-1'>javascript</p>
+                                    </div>
+                                    <div className='flex ml-3 my-4 items-center'>
+                                        <img className='w-10 h-5 mx-0' src={PHp} alt="php icon" />
+                                        <p className='ml-2 text-gray-400 pt-1'>php</p>
+                                    </div>
+                                    <div className='flex ml-3 my-4'>
+                                        <img className='w-7 h-7 mx-0' src={MySQL} alt="mysql icon" />
+                                        <p className='ml-2 text-gray-400 pt-1'>mysql</p>
+                                    </div>
+                                    <div className='flex ml-3 my-4'>
+                                        <img className='w-7 h-7 mx-0' src={Mongo} alt="mongoDB icon" />
+                                        <p className='ml-2 text-gray-400 pt-1'>mongoDB</p>
+                                    </div>
+                                  
+                                </div>
+
+                                <div className='h-auto px-4 pt-3 text-xs'>
+                                     <div className='flex items-center'>
+                                        <img className='w-7 h-7 mx-0' src={Folder} alt="HTML icon" />
+                                        <p className='ml-2 text-[#f19947] text-xs mt-2 md:mt-0 md:text-sm'>Libraries & Frameworks</p>
+                                    </div>
+                                    <div className='flex ml-3 my-4'>
+                                        <img className='w-7 h-7 mx-0' src={Jquery} alt="Jquery icon" />
+                                        <p className='ml-2 text-gray-400  pt-1'>jQuery</p>
                                     </div>
                                     <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={Tailwind} alt="tailwind icon" />
-                                        <p className='ml-2 text-gray-400 text-sm pt-1'>tailwind</p>
+                                        <p className='ml-2 text-gray-400  pt-1'>tailwind</p>
                                     </div>
                                     <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-6 mx-0' src={Bootstrap} alt="bootstrap icon" />
-                                        <p className='ml-2 text-gray-400 text-sm pt-1'>bootstrap</p>
+                                        <p className='ml-2 text-gray-400  pt-1'>bootstrap</p>
                                     </div>
-                                </div>
-
-                                <div className='h-auto px-4'>
-                                    <div className='flex my-4'>
+                                   
+                                    <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={ReactImg} alt="react icon" />
-                                        <p className='ml-2 text-gray-400 text-sm pt-1'>react.js</p>
+                                        <p className='ml-2 text-gray-400  pt-1'>react.js</p>
                                     </div>
-                                    <div className='flex my-4'>
+                                    <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={Node} alt="node icon" />
-                                        <p className='ml-2 text-gray-400 text-sm pt-1'>node.js</p>
+                                        <p className='ml-2 text-gray-400 pt-1'>node.js</p>
                                     </div>
-                                    <div className='flex my-4'>
-                                        <img className='w-7 h-7 mx-0' src={Mongo} alt="mongoDB icon" />
-                                        <p className='ml-2 text-gray-400 text-sm pt-1'>mongoDB</p>
+                                    <div className='flex ml-3 my-4'>
+                                        <img className='w-7 h-7 mx-0' src={Express} alt="Express icon" />
+                                        <p className='ml-2 text-gray-400 pt-1'>express.js</p>
                                     </div>
-                                    <div className='flex my-4'>
-                                        <img className='w-7 h-7 mx-0' src={MySQL} alt="mysql icon" />
-                                        <p className='ml-2 text-gray-400 text-sm pt-1'>mysql</p>
+                                    
+
+                                 
+                                    <div className='md:hidden flex items-center my-4'>
+                                        <img className='w-7 h-7 mx-0' src={Folder} alt="HTML icon" />
+                                        <p className='ml-2 text-[#f19947] text-xs mt-2 md:mt-0 md:text-sm'>Design Tools</p>
+                                      </div>
+                                      <div className='md:hidden flex ml-0 md:ml-3'>
+                                        <img className='w-7 h-7 mx-[1px] md:mx-1' src={Xd} alt="XD icon" />
+                                        <img className='w-7 h-7 mx-[1px] md:mx-1' src={Ps} alt="Photoshop icon" />
+                                        <img className='w-7 h-7 mx-[1px] md:mx-1' src={Ae} alt="AE icon" />
+                                        <img className='w-7 h-7 mx-[1px] md:mx-1' src={Premiere} alt="Premiere icon" />
                                     </div>
-                                    <div className='flex xmy-4'>
-                                        <img className='w-7 h-7 mx-0' src={Wordpress} alt="wordpress icon" />
-                                        <p className='ml-2 text-gray-400 text-sm pt-1'>wordpress</p>
-                                    </div>
+                                   
                                 </div>
 
-                                <div className='h-auto px-4 pb-6'>
-                                    <div className='flex ml-3 md:ml-3 my-4'>
-                                        <img className='w-7 h-7 mx-0' src={Heroku} alt="heroku icon" />
-                                        <p className='ml-2 text-gray-400 text-sm pt-1'>heroku</p>
+                                <div className='h-auto px-4 pt-3 pb-6 text-xs'>
+                                    <div className='flex items-center'>
+                                        <img className='w-7 h-7 mx-0' src={Folder} alt="HTML icon" />
+                                        <p className='ml-2 text-[#f19947] text-xs mt-2 md:mt-0 md:text-sm'>Tools & Platforms</p>
                                     </div>
-                                    <div className='flex ml-3 md:ml-3 my-4'>
-                                        <img className='w-7 h-7 mx-0' src={Netlify} alt="netlify icon" />
-                                        <p className='ml-2 text-gray-400 text-sm pt-1'>netlify</p>
-                                    </div>
-                                    <div className='flex ml-3 md:ml-3 my-4'>
-                                        <img className='w-7 h-7 mx-0' src={GitHub} alt="github icon" />
-                                        <p className='ml-2 text-gray-400 text-sm pt-1'>github</p>
-                                    </div>
-                                    <div className='flex ml-3 md:ml-3 my-4'>
+                                    <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={Git} alt="git icon" />
-                                        <p className='ml-2 text-gray-400 text-sm pt-1'>.git</p>
+                                        <p className='ml-2 text-gray-400  pt-1'>.git</p>
                                     </div>
+                                    <div className='flex ml-3 my-4'>
+                                        <img className='w-7 h-7 mx-0' src={GitHub} alt="github icon" />
+                                        <p className='ml-2 text-gray-400  pt-1'>github</p>
+                                    </div>
+                                    <div className='flex ml-3 my-4'>
+                                        <img className='w-7 h-7 mx-0' src={Netlify} alt="netlify icon" />
+                                        <p className='ml-2 text-gray-400  pt-1'>netlify</p>
+                                    </div>
+                                     <div className='flex ml-3 my-4'>
+                                        <img className='w-7 h-7 mx-0' src={Heroku} alt="heroku icon" />
+                                        <p className='ml-2 text-gray-400 pt-1'>heroku</p>
+                                    </div>
+                                    <div className='flex ml-3 my-4'>
+                                        <img className='w-7 h-7 mx-0' src={Wordpress} alt="wordpress icon" />
+                                        <p className='ml-2 text-gray-400  pt-1'>wordpress</p>
+                                    </div>
+                                    
+                                
+                                  
+                                    <div className='hidden md:flex items-center my-4  mt-6'>
+                                        <img className='w-7 h-7 mx-0' src={Folder} alt="HTML icon" />
+                                        <p className='ml-2 text-[#f19947] text-xs mt-2 md:mt-0 md:text-sm'>Design Tools</p>
+                                      </div>
+
+                                      <div className='hidden md:flex ml-3 my-4'>
+                                        <img className='w-7 h-7 mx-1' src={Xd} alt="XD icon" />
+                                        <img className='w-7 h-7 mx-1' src={Ps} alt="Photoshop icon" />
+                                        <img className='w-7 h-7 mx-1' src={Ae} alt="AE icon" />
+                                        <img className='w-7 h-7 mx-1' src={Premiere} alt="Premiere icon" />
+                                        </div>
+                                  
                                 </div>
                             </div>
                         </div>

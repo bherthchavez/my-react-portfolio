@@ -23,9 +23,9 @@ const About = () => {
         </span>
       </div>
       <div className="mt-6 text-center">
-        <a href='mailto:bherthchavez@gmail.com' target='_blank' rel='noreferrer noopener' className=' text-gray-400 hover:text-[#d19a66] '>
+        <p className=' text-gray-400'>
           ⓒ {new Date().getFullYear()} Julbert Pruel
-        </a>
+        </p>
       </div>
     </div>
   );

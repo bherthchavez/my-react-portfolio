@@ -1,5 +1,7 @@
 import React from "react";
 import Typed from 'react-typed';
+import Resume from '../assets/resume.pdf';
+
 const About = () => {
   return (
     <div name='about' className='w-full h-screen text-gray-300'>
@@ -22,14 +24,32 @@ const About = () => {
                   <p className="mt-2 text-white pr-2">&gt;  </p>
                   <p className="mt-2 font-light text-white">bherth.contactInfo</p>
                 </div>
-                <p className="font-light text-[#d19a66] ml-3">['bherthchavez@gmail.com', 'LinkedIn, 'github']</p>
-
+                <div className="md:flex">
+                <div className="flex">
+                  <p className="font-light text-[#d19a66] ml-3">{'['}'</p>
+                  <a href='mailto:bherthchavez@gmail.com' target='_blank' rel='noreferrer noopener' className="font-light text-[#d19a66] hover:text-blue-500">bherthchavez@gmail.com</a>
+                  <p className="font-light text-[#d19a66]">',</p>
+                  </div>
+                  <div className="flex">
+                  <p className="font-light text-[#d19a66] ml-3">'</p>
+                  <a href='https://www.linkedin.com/in/julbert-pruel-65a975129/' target='_blank' rel='noreferrer noopener' className="font-light text-[#d19a66] hover:text-blue-500">LinkedIn</a>
+                  <p className="font-light text-[#d19a66]">',</p>
+                  </div>
+                  <div className="flex">
+                  <p className="font-light text-[#d19a66] ml-3">'</p>
+                  <a href='https://github.com/bherthchavez' target='_blank' rel='noreferrer noopener' className="font-light text-[#d19a66] hover:text-blue-500">github</a>
+                  <p className="font-light text-[#d19a66]">'{']'}'</p>
+                  </div>
+                </div>
                 <div className='flex'>
                   <p className="mt-2 text-white pr-2">&gt;  </p>
                   <p className="mt-2 font-light text-white">bherth.resume</p>
                 </div>
-                <p className="font-light text-[#d19a66] ml-3">'Julbert.pdf'</p>
-
+                <div className="flex">
+                  <p className="font-light text-[#d19a66] ml-3">'</p>
+                  <a download="resume.pdf" target="_blank" rel='noreferrer noopener' href={Resume} className="font-light text-[#d19a66] hover:text-blue-500">Julbert.pdf</a>
+                  <p className="font-light text-[#d19a66]">',</p>
+                </div>
                 <div className='flex'>
                   <p className="mt-2 text-white pr-2">&gt;  </p>
                   <p className="mt-2 font-light text-white"> bherth.education</p>
