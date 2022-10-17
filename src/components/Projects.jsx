@@ -50,20 +50,20 @@ const Skills = () => {
                                         <p className='text-gray-300 ml-2 md:mt-[25px]'>  {'{'} </p>
                                         </div>
                                         <div className='flex'>
-                                            <p className='text-[#d6a23b] ml-1 md:ml-7 mt-[15px] '> project-for: </p>
+                                            <p className='text-[#d19a66] ml-1 md:ml-7 mt-[15px] '> project-for: </p>
                                             <p className='text-gray-300 ml-1 mt-[15px] '> AL KATHIRI GROUPS, </p>
                                          </div>
                                          <div className='flex'>
-                                            <p className='text-[#d6a23b] ml-1 md:ml-7 mt-[3px] '> location: </p>
+                                            <p className='text-[#d19a66] ml-1 md:ml-7 mt-[3px] '> location: </p>
                                             <p className='text-gray-300 ml-1 mt-[3px] '> Doha, Qatar, </p>
                                          </div>
                                          <div className='flex'>
-                                            <p className='text-[#d6a23b] ml-1 md:ml-7 mt-[15px] '> description: </p>
+                                            <p className='text-[#d19a66] ml-1 md:ml-7 mt-[15px] '> description: </p>
                                             <p className='text-gray-300 ml-1 mt-[15px] '> tracking the income  </p>
                                          </div>
                                          <p className='text-gray-300 ml-1 md:ml-7'> and expenses of business bank accounts, as well as the approval and printing of created bills and payment vouchers, </p>
                                          <div className='flex'>
-                                            <p className='text-[#d6a23b] ml-1 md:ml-7 mt-[17px] '> language: </p>
+                                            <p className='text-[#d19a66] ml-1 md:ml-7 mt-[17px] '> language: </p>
                                             <p className='text-gray-300 ml-1 mt-[17px] '> NODE JS, EXPRESS </p>
                                          </div>
                                          <p className='text-gray-300 ml-1  md:ml-7 mt-[3px] '> BOOTSTRAP, MONGO DB, HEROKU, </p>

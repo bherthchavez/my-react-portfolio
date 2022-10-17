@@ -43,7 +43,7 @@ const Skills = () => {
                                 <div className='h-auto px-4  pt-3 text-xs'>
                                     <div className='flex items-center'>
                                         <img className='w-7 h-7 mx-0' src={Folder} alt="HTML icon" />
-                                        <p className='ml-2 text-[#f19947] text-xs mt-2 md:mt-0 md:text-sm'>Programming Languages</p>
+                                        <p className='ml-2 text-[#d19a66] text-xs mt-2 md:mt-0 md:text-sm'>Programming Languages</p>
                                     </div>
                                     <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={HTML} alt="html icon" />
@@ -79,7 +79,7 @@ const Skills = () => {
                                 <div className='h-auto px-4 pt-3 text-xs'>
                                      <div className='flex items-center'>
                                         <img className='w-7 h-7 mx-0' src={Folder} alt="HTML icon" />
-                                        <p className='ml-2 text-[#f19947] text-xs mt-2 md:mt-0 md:text-sm'>Libraries & Frameworks</p>
+                                        <p className='ml-2 text-[#d19a66] text-xs mt-2 md:mt-0 md:text-sm'>Libraries & Frameworks</p>
                                     </div>
                                     <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={Jquery} alt="Jquery icon" />
@@ -111,7 +111,7 @@ const Skills = () => {
                                  
                                     <div className='md:hidden flex items-center my-4'>
                                         <img className='w-7 h-7 mx-0' src={Folder} alt="HTML icon" />
-                                        <p className='ml-2 text-[#f19947] text-xs mt-2 md:mt-0 md:text-sm'>Design Tools</p>
+                                        <p className='ml-2 text-[#d19a66] text-xs mt-2 md:mt-0 md:text-sm'>Design Tools</p>
                                       </div>
                                       <div className='md:hidden flex ml-0 md:ml-3'>
                                         <img className='w-7 h-7 mx-[1px] md:mx-1' src={Xd} alt="XD icon" />
@@ -125,7 +125,7 @@ const Skills = () => {
                                 <div className='h-auto px-4 pt-3 pb-6 text-xs'>
                                     <div className='flex items-center'>
                                         <img className='w-7 h-7 mx-0' src={Folder} alt="HTML icon" />
-                                        <p className='ml-2 text-[#f19947] text-xs mt-2 md:mt-0 md:text-sm'>Tools & Platforms</p>
+                                        <p className='ml-2 text-[#d19a66] text-xs mt-2 md:mt-0 md:text-sm'>Tools & Platforms</p>
                                     </div>
                                     <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={Git} alt="git icon" />
@@ -152,7 +152,7 @@ const Skills = () => {
                                   
                                     <div className='hidden md:flex items-center my-4  mt-6'>
                                         <img className='w-7 h-7 mx-0' src={Folder} alt="HTML icon" />
-                                        <p className='ml-2 text-[#f19947] text-xs mt-2 md:mt-0 md:text-sm'>Design Tools</p>
+                                        <p className='ml-2 text-[#d19a66] text-xs mt-2 md:mt-0 md:text-sm'>Design Tools</p>
                                       </div>
 
                                       <div className='hidden md:flex ml-3 my-4'>
