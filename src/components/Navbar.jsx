@@ -19,6 +19,13 @@ const Navbar = () => {
       </Link>
       <ul className='hidden md:flex'>
       <li className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer'>
+        <Link to='experience' smooth={true} duration={500}>
+          <span className='bg-left-bottom bg-gradient-to-r from-[#d19a66] to-[#d19a66] bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_3px] transition-all duration-500 ease-out'>
+            Experience
+          </span>
+          </Link>
+        </li>
+      <li className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer'>
         <Link to='skills' smooth={true} duration={500}>
           <span className='bg-left-bottom bg-gradient-to-r from-[#d19a66] to-[#d19a66] bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_3px] transition-all duration-500 ease-out'>
             Skills
@@ -47,6 +54,13 @@ const Navbar = () => {
         <Link to='home' smooth={true} duration={500}>
           <h1 onClick={handleNav} className='w-full text-xl font-bold mb-4 text-[#d19a66] px-4 cursor-pointer p-4 '>bherth</h1>
         </Link>
+        <li className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer border-b border-gray-600'>
+        <Link to='experience' smooth={true} duration={500}>
+          <span onClick={handleNav} className='bg-left-bottom bg-gradient-to-r from-[#d19a66] to-[#d19a66] bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_3px] transition-all duration-500 ease-out'>
+            Experience
+          </span>
+          </Link>
+        </li>
         <li className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer border-b border-gray-600'>
         <Link to='skills' smooth={true} duration={500}>
           <span onClick={handleNav} className='bg-left-bottom bg-gradient-to-r from-[#d19a66] to-[#d19a66] bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_3px] transition-all duration-500 ease-out'>

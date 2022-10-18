@@ -6,6 +6,8 @@ import Side from './components/Side'
 import Skills from './components/Skills'
 import Footer from './components/Footer'
 import Projects from './components/Projects'
+import Experience from './components/Experience'
+
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
      <Navbar />
      <Side />
       <Head />
+      <Experience />
       <Skills />
       <Projects />
       <About />
