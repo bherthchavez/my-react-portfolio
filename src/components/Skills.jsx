@@ -23,9 +23,9 @@ import PHp from '../assets/PHP.png';
 import Typescript from '../assets/Typescript.png';
 import Express from '../assets/express.png';
 
-const Skills = () => {
+const Skills = (props) => {
     return (
-        <div name='skills' className='w-full h-screen text-gray-300 mt-24 md:mt-0'>
+        <div name='skills' className={props.isNav ? 'w-full h-screen text-gray-300 mt-24 md:mt-0 blur': 'w-full h-screen text-gray-300 mt-24 md:mt-0'}>
             <div className='max-w-[800px] mx-auto p-4 flex flex-col justify-center h-full'>
                 <div>
                     <p className='text-2xl md:text-3xl font-bold inline'>Skills</p>

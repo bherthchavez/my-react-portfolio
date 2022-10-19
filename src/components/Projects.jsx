@@ -2,9 +2,9 @@ import React from 'react';
 import Acc1 from '../assets/el-4.PNG';
 import Acc5 from '../assets/el-5.PNG';
 
-const Skills = () => {
+const Skills = (props) => {
     return (
-        <div name='projects' className='w-full h-screen text-gray-300 mt-28 md:mt-0'>
+        <div name='projects' className={props.isNav ? 'w-full h-screen text-gray-300 mt-28 md:mt-0 blur' : 'w-full h-screen text-gray-300 mt-28 md:mt-0'}>
             <div className='max-w-[800px] mx-auto p-4 flex flex-col justify-center h-full'>
                 <div>
                     <p className='text-2xl md:text-3xl font-bold inline'>Current Projects</p>

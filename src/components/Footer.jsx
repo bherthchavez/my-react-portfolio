@@ -2,10 +2,10 @@ import React from "react";
 import ReactImg from '../assets/react.png';
 import Tailwind from '../assets/tailwind.png';
 import Netlify from '../assets/netlify.png';
-const About = () => {
+const About = (props) => {
   return (
 
-    <div className='max-w-[800px] h-[150px] mx-auto pt-4'>
+    <div className={props.isNav ? 'max-w-[800px] h-[150px] mx-auto pt-4 blur' : 'max-w-[800px] h-[150px] mx-auto pt-4'}>
       <div className="flex mt-0 justify-center items-center mb-1">
         <span class="my-auto mx-2 text-gray-400 text-sm"> Build with </span>
       </div>

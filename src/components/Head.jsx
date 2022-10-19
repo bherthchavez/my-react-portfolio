@@ -5,11 +5,11 @@ import { Link } from 'react-scroll';
 import mypic from '../assets/mypic.png';
 
 
-function Head() {
+function Head(props) {
 
   return (
 
-    <div name='home' className='text-white'>
+    <div name='home' className={props.isNav ? 'text-white blur-sm' : 'text-white'}>
       <div className='max-w-[800px] mt-[-70px] w-full h-screen mx-auto text-left flex flex-col justify-center px-4'>
         <img src={mypic} alt='Me' className='border-[#d19a66] border-2 mt-[200px] h-32 w-32 rounded-2xl shadow-2xl grayscale hover:grayscale-[75%] transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300' />
         <div className='max-w-[1240px]'>
@@ -33,9 +33,9 @@ function Head() {
         </div>
         <p className=' text-gray-500 pt-2 pb-10 text-sm md:text-base'> Building and designing are two of my favorite things to do.
           I recently decided to become a full stack web developer because I want people to see and use my work. My previous jobs were graphic designer and 2d animator, but my first job as a software developer was in 2015.</p>
-        <Link className='w-64 h-12 mb-16 md:mb-0' to='skills' smooth={true} duration={500}>
-          <span className='md:text-base text-sm border-[1px] md:border-2 group px-6 flex justify-between text-center items-center border-[#d19a66] w-64 rounded-md font-medium  py-3 text-[#d19a66] hover:bg-[#343943] hover:border-[#343943] cursor-pointer'>
-            Chek out my skills!
+        <Link className='w-64 h-12 mb-16 md:mb-0' to='experience' smooth={true} duration={500}>
+          <span className='md:text-base text-sm border-[1px] md:border-2 group px-6 flex justify-between text-center items-center border-[#d19a66] w-[270px] md:w-[300px] rounded-md font-medium  py-3 text-[#d19a66] hover:bg-[#343943] hover:border-[#343943] cursor-pointer'>
+            Chek out my experience!
             <span className='group-hover:rotate-90 duration-300'>
               <HiArrowNarrowRight className='ml-3 ' />
             </span>
