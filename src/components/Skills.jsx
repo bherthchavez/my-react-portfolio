@@ -20,8 +20,9 @@ import Ps from '../assets/ps.png';
 import Xd from '../assets/xd.png';
 import Jquery from '../assets/jquery.png';
 import PHp from '../assets/PHP.png';
-import Typescript from '../assets/Typescript.png';
+// import Typescript from '../assets/Typescript.png';
 import Express from '../assets/express.png';
+import Render from '../assets/render.png';
 
 const Skills = (props) => {
     return (
@@ -53,10 +54,10 @@ const Skills = (props) => {
                                         <img className='w-7 h-7 mx-0' src={CSS} alt="css icon" />
                                         <p className='ml-2 text-gray-400  pt-1'>css</p>
                                     </div>
-                                    <div className='flex ml-3 my-4'>
+                                    {/* <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={Typescript} alt="Typescript icon" />
                                         <p className='ml-2 text-gray-400 pt-1'>typescript</p>
-                                    </div>
+                                    </div> */}
                                     <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={JavaScript} alt="javascript icon" />
                                         <p className='ml-2 text-gray-400  pt-1'>javascript</p>
@@ -142,6 +143,10 @@ const Skills = (props) => {
                                      <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={Heroku} alt="heroku icon" />
                                         <p className='ml-2 text-gray-400 pt-1'>heroku</p>
+                                    </div>
+                                     <div className='flex ml-3 my-4'>
+                                        <img className='w-7 h-7 mx-0' src={Render} alt="heroku icon" />
+                                        <p className='ml-2 text-gray-400 pt-1'>render</p>
                                     </div>
                                     <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={Wordpress} alt="wordpress icon" />

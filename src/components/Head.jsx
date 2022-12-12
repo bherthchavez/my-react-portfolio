@@ -27,12 +27,13 @@ function Head(props) {
               />
             </div>
             <p className='text-[#d19a66] font-bold md:text-lg'>
-              FULL STACK WEB DEVELOPER
+              MERN STACK DEVELOPER
             </p>
           </div>
         </div>
-        <p className=' text-gray-500 pt-2 pb-10 text-sm md:text-base'> Building and designing are two of my favorite things to do.
-          I recently decided to become a full stack web developer because I want people to see and use my work. My previous jobs were graphic designer and 2d animator, but my first job as a software developer was in 2015.</p>
+        <p className=' text-gray-500 pt-2 pb-10 text-sm md:text-base'> Building and designing are two of my favorite things to do. If you are a company looking for a web presence or an employer looking to hire, please contact me 
+        <a href='mailto:bherthchavez@gmail.com' target='_blank' rel='noreferrer noopener' className="font-light text-gray-400 hover:text-[#d19a66]"> here.</a>
+</p>
         <Link className='w-64 h-12 mb-16 md:mb-0' to='experience' smooth={true} duration={500}>
           <span className='md:text-base text-sm border-[1px] md:border-2 group px-6 flex justify-between text-center items-center border-[#d19a66] w-[270px] md:w-[300px] rounded-md font-medium  py-3 text-[#d19a66] hover:bg-[#343943] hover:border-[#343943] cursor-pointer'>
             Chek out my experience!
