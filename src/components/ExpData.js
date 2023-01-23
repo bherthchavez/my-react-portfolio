@@ -1,6 +1,6 @@
 const ExpData = [
     {
-        position: 'Front-End-Develoepr',
+        position: 'Front-End-Developer',
         companyName: 'ALFTOON MARKETING',
         website: 'https://alftoon.qa/',
         date: 'November 2021 – 2022',
