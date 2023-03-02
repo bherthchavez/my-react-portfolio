@@ -19,14 +19,13 @@ import Ae from '../assets/ae.png';
 import Ps from '../assets/ps.png';
 import Xd from '../assets/xd.png';
 import Jquery from '../assets/jquery.png';
-import PHp from '../assets/PHP.png';
-// import Typescript from '../assets/Typescript.png';
+import Redux from '../assets/redux.png';
 import Express from '../assets/express.png';
 import Render from '../assets/render.png';
 
 const Skills = (props) => {
     return (
-        <div name='skills' className={props.isNav ? 'w-full h-screen text-gray-300 mt-24 md:mt-0 blur': 'w-full h-screen text-gray-300 mt-24 md:mt-0'}>
+        <div name='skills' className={props.isNav ? 'w-full h-auto sm:h-screen text-gray-300 mt-24 md:mt-0 blur' : 'w-full h-auto sm:h-screen text-gray-300 mt-24 md:mt-0'}>
             <div className='max-w-[800px] mx-auto p-4 flex flex-col justify-center h-full'>
                 <div>
                     <p className='text-2xl md:text-3xl font-bold inline'>Skills</p>
@@ -54,17 +53,9 @@ const Skills = (props) => {
                                         <img className='w-7 h-7 mx-0' src={CSS} alt="css icon" />
                                         <p className='ml-2 text-gray-400  pt-1'>css</p>
                                     </div>
-                                    {/* <div className='flex ml-3 my-4'>
-                                        <img className='w-7 h-7 mx-0' src={Typescript} alt="Typescript icon" />
-                                        <p className='ml-2 text-gray-400 pt-1'>typescript</p>
-                                    </div> */}
                                     <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={JavaScript} alt="javascript icon" />
                                         <p className='ml-2 text-gray-400  pt-1'>javascript</p>
-                                    </div>
-                                    <div className='flex ml-3 my-4 items-center'>
-                                        <img className='w-10 h-5 mx-0' src={PHp} alt="php icon" />
-                                        <p className='ml-2 text-gray-400 pt-1'>php</p>
                                     </div>
                                     <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={MySQL} alt="mysql icon" />
@@ -74,18 +65,33 @@ const Skills = (props) => {
                                         <img className='w-7 h-7 mx-0' src={Mongo} alt="mongoDB icon" />
                                         <p className='ml-2 text-gray-400 pt-1'>mongoDB</p>
                                     </div>
-                                  
+
+                                    <div className='hidden md:flex items-center my-4  mt-6'>
+                                        <img className='w-7 h-7 mx-0 opacity-70' src={Folder} alt="HTML icon" />
+                                        <p className='ml-2 text-[#d19a66] text-xs mt-2 md:mt-0 md:text-sm'>Design Tools</p>
+                                    </div>
+
+                                    <div className='hidden md:flex ml-3 my-4'>
+                                        <img className='w-7 h-7 mx-1' src={Xd} alt="XD icon" />
+                                        <img className='w-7 h-7 mx-1' src={Ps} alt="Photoshop icon" />
+                                        <img className='w-7 h-7 mx-1' src={Ae} alt="AE icon" />
+                                        <img className='w-7 h-7 mx-1' src={Premiere} alt="Premiere icon" />
+                                    </div>
+                                    
+                                    
+
                                 </div>
 
                                 <div className='h-auto px-4 pt-3 text-xs'>
-                                     <div className='flex items-center'>
+                                    <div className='flex items-center'>
                                         <img className='w-7 h-7 mx-0 opacity-70' src={Folder} alt="HTML icon" />
                                         <p className='ml-2 text-[#d19a66] text-xs mt-2 md:mt-0 md:text-sm'>Libraries & Frameworks</p>
                                     </div>
                                     <div className='flex ml-3 my-4'>
-                                        <img className='w-7 h-7 mx-0' src={Jquery} alt="Jquery icon" />
-                                        <p className='ml-2 text-gray-400  pt-1'>jQuery</p>
+                                        <img className='w-7 h-7 mx-0' src={Redux} alt="Express icon" />
+                                        <p className='ml-2 text-gray-400 pt-1'>Redux</p>
                                     </div>
+                                   
                                     <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={Tailwind} alt="tailwind icon" />
                                         <p className='ml-2 text-gray-400  pt-1'>tailwind</p>
@@ -94,33 +100,24 @@ const Skills = (props) => {
                                         <img className='w-7 h-6 mx-0' src={Bootstrap} alt="bootstrap icon" />
                                         <p className='ml-2 text-gray-400  pt-1'>bootstrap</p>
                                     </div>
-                                   
+
                                     <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={ReactImg} alt="react icon" />
-                                        <p className='ml-2 text-gray-400  pt-1'>react.js</p>
+                                        <p className='ml-2 text-gray-400  pt-1'>react</p>
                                     </div>
                                     <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={Node} alt="node icon" />
-                                        <p className='ml-2 text-gray-400 pt-1'>node.js</p>
+                                        <p className='ml-2 text-gray-400 pt-1'>node</p>
                                     </div>
                                     <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={Express} alt="Express icon" />
-                                        <p className='ml-2 text-gray-400 pt-1'>express.js</p>
+                                        <p className='ml-2 text-gray-400 pt-1'>express</p>
                                     </div>
-                                    
+                                    <div className='flex ml-3 my-4'>
+                                        <img className='w-7 h-7 mx-0' src={Jquery} alt="Jquery icon" />
+                                        <p className='ml-2 text-gray-400  pt-1'>jQuery</p>
+                                    </div>
 
-                                 
-                                    <div className='md:hidden flex items-center my-4'>
-                                        <img className='w-7 h-7 mx-0 opacity-70' src={Folder} alt="HTML icon" />
-                                        <p className='ml-2 text-[#d19a66] text-xs mt-2 md:mt-0 md:text-sm'>Design Tools</p>
-                                      </div>
-                                      <div className='md:hidden flex ml-0 md:ml-3'>
-                                        <img className='w-7 h-7 mx-[1px] md:mx-1' src={Xd} alt="XD icon" />
-                                        <img className='w-7 h-7 mx-[1px] md:mx-1' src={Ps} alt="Photoshop icon" />
-                                        <img className='w-7 h-7 mx-[1px] md:mx-1' src={Ae} alt="AE icon" />
-                                        <img className='w-7 h-7 mx-[1px] md:mx-1' src={Premiere} alt="Premiere icon" />
-                                    </div>
-                                   
                                 </div>
 
                                 <div className='h-auto px-4 pt-3 pb-6 text-xs'>
@@ -140,11 +137,11 @@ const Skills = (props) => {
                                         <img className='w-7 h-7 mx-0' src={Netlify} alt="netlify icon" />
                                         <p className='ml-2 text-gray-400  pt-1'>netlify</p>
                                     </div>
-                                     <div className='flex ml-3 my-4'>
+                                    <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={Heroku} alt="heroku icon" />
                                         <p className='ml-2 text-gray-400 pt-1'>heroku</p>
                                     </div>
-                                     <div className='flex ml-3 my-4'>
+                                    <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={Render} alt="heroku icon" />
                                         <p className='ml-2 text-gray-400 pt-1'>render</p>
                                     </div>
@@ -152,21 +149,16 @@ const Skills = (props) => {
                                         <img className='w-7 h-7 mx-0' src={Wordpress} alt="wordpress icon" />
                                         <p className='ml-2 text-gray-400  pt-1'>wordpress</p>
                                     </div>
-                                    
-                                
-                                  
-                                    <div className='hidden md:flex items-center my-4  mt-6'>
+                                    <div className='md:hidden flex items-center my-4'>
                                         <img className='w-7 h-7 mx-0 opacity-70' src={Folder} alt="HTML icon" />
                                         <p className='ml-2 text-[#d19a66] text-xs mt-2 md:mt-0 md:text-sm'>Design Tools</p>
                                       </div>
-
-                                      <div className='hidden md:flex ml-3 my-4'>
-                                        <img className='w-7 h-7 mx-1' src={Xd} alt="XD icon" />
-                                        <img className='w-7 h-7 mx-1' src={Ps} alt="Photoshop icon" />
-                                        <img className='w-7 h-7 mx-1' src={Ae} alt="AE icon" />
-                                        <img className='w-7 h-7 mx-1' src={Premiere} alt="Premiere icon" />
-                                        </div>
-                                  
+                                      <div className='md:hidden flex ml-0 md:ml-3'>
+                                        <img className='w-7 h-7 mx-[1px] md:mx-1' src={Xd} alt="XD icon" />
+                                        <img className='w-7 h-7 mx-[1px] md:mx-1' src={Ps} alt="Photoshop icon" />
+                                        <img className='w-7 h-7 mx-[1px] md:mx-1' src={Ae} alt="AE icon" />
+                                        <img className='w-7 h-7 mx-[1px] md:mx-1' src={Premiere} alt="Premiere icon" />
+                                    </div>
                                 </div>
                             </div>
                         </div>

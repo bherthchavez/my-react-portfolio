@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Folder from '../assets/folder.png';
 import ExpContent from "./ExpContent";
-import ExpData from "./ExpData";
+import {ExpData} from "./ExpData";
 
 
 const About = (props) => {

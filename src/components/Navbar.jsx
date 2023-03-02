@@ -20,7 +20,7 @@ const Navbar = () => {
   nav ? document.body.classList.add("overflow-hidden") : document.body.classList.remove("overflow-hidden")
 
   return (
-    <div>
+    <>
       <div className='md:px-[60px] sm:px-[20px] z-20 fixed flex justify-between items-end h-[130px] w-full mx-auto  my-2 text-white bg-[#373d49] '>
         <Link to='home' smooth={true} duration={500}>
           <h1 className='w-full text-2xl font-bold mb-4 text-[#d19a66] px-4 cursor-pointer'>{!nav && 'bherth'}</h1>
@@ -111,7 +111,7 @@ const Navbar = () => {
       <Projects isNav={nav} />
       <About isNav={nav} />
       <Footer isNav={nav} />
-    </div>
+    </>
 
   );
 };
