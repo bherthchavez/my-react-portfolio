@@ -47,7 +47,7 @@ function Head(props) {
           <span onClick={()=> setReadMore(!readMore)} className={!readMore ? `cursor-pointer text-sm font-extrabold text-gray-400 hover:text-[#f8a04d]`:`border rounded-lg p-2 border-slate-500  cursor-pointer text-sm font-extrabold text-gray-400 hover:text-[#f8a04d]` }>{ !readMore ?` read more..` : ` Hide` }</span>
         </p>
         <Link className='w-64 h-12 mb-16 md:mb-0' to='experience' smooth={true} duration={500}>
-          <span className='md:text-base text-sm border-[1px] md:border-2 group px-6 flex justify-between text-center items-center border-[#d19a66] w-[270px] md:w-[300px] rounded-md font-medium  py-3 text-[#d19a66] hover:bg-[#343943] hover:border-[#343943] cursor-pointer'>
+          <span className='whitespace-nowrap md:text-base text-sm border-[1px] md:border-2 group px-6 flex justify-between text-center items-center border-[#d19a66] w-[270px] md:w-[300px] rounded-md font-medium  py-3 text-[#d19a66] hover:bg-[#343943] hover:border-[#343943] cursor-pointer'>
             Chek out my experience!
             <span className='group-hover:rotate-90 duration-300'>
               <HiArrowNarrowRight className='ml-3 ' />

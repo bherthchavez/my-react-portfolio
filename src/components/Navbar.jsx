@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <>
     <div
-        className={colorChange ? `${classNav} z-20 fixed flex justify-between ease-in-out px-4 sm:px-8 duration-300 items-center  top-0 w-full h-16 text-white ` : `fixed  z-20 flex justify-between items-center w-full ease-in-out duration-300 top-[-100%] h-16 text-white`}
+        className={colorChange ? `${classNav} z-20 fixed flex justify-between ease-in-out px-4 sm:px-8 duration-500 items-center  top-0 w-full h-16 text-white ` : `fixed  z-20 flex justify-between items-center w-full ease-out-in duration-500 top-[-100%] h-16 text-white`}
       >
            <Link to='home' smooth={true} duration={500}>
           <h1 className='w-full text-2xl font-bold text-[#d19a66] cursor-pointer'>{!nav && 'bherth'}</h1>
