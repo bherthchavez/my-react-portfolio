@@ -18,9 +18,8 @@ const Navbar = () => {
 
   nav ? document.body.classList.add("overflow-hidden") : document.body.classList.remove("overflow-hidden")
 
-  const [colorChange, setColorchange] = useState(false);
+  const [colorChange, setColorchange] = useState(true);
   const [scrollY, setscrollY] = useState(window.scrollY);
-
   const changeNavbarColor = () =>{
 
      if(window.scrollY < scrollY){
