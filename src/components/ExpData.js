@@ -1,9 +1,9 @@
 export const ExpData = [
     {
-        position: 'Graphic Web Designer',
+        position: 'Graphic-Web-Designer',
         companyName: 'ALFTOON MARKETING',
         website: 'https://alftoon.qa/',
-        date: 'November 2021 – 2022',
+        date: 'November 2021 – 2023',
         location: 'Doha, Qatar',
         jd: "Developed and design company website and e-commerce using WordPress. Designing landing page for every workshop and maintained the design of e-commerce mobile app using react native"
     },
@@ -16,7 +16,7 @@ export const ExpData = [
         jd: 'Worked with a team of web and mobile developers to build a marketing presentation for the cloud-based ERP. Creating and designing user’s manual and documents for every software product'
     },
     {
-        position: 'Graphic Web Designer',
+        position: 'Graphic-Web-Designer',
         companyName: 'Blue Media Networks',
         website: '/',
         date: 'July 2018 – 2018',

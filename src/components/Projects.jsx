@@ -126,7 +126,7 @@ const Skills = (props) => {
                                                     <p className='text-[#d19a66] ml-1 md:ml-7 mt-[17px] '>  built with: </p>
                                                     <p className='text-gray-300 ml-1 mt-[17px] '> MONGO DB, EXPRESS,</p>
                                                 </div>
-                                                <p className='text-gray-300 ml-1  md:ml-7 mt-[3px] '>  REACT, NODE, REDUX, TAILWIND </p>
+                                                <p className='text-gray-300 ml-1  md:ml-7 mt-[3px] '>  REACT, NODE, REDUX, TAILWIND. RENDER </p>
                                                 <p className='text-gray-00 ml-3 mt-[20px]'>  {'};'} </p>
 
                                             </div>

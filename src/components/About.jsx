@@ -49,7 +49,7 @@ const About = (props) => {
                   <p className="mt-2 text-gray-300 pr-2">&gt;  </p>
                   <p className="mt-2 font-light text-gray-300">bherth.contact.no</p>
                 </div>
-                <p className="font-light text-[#d19a66] ml-3">'09270075145s'</p>
+                <p className="font-light text-[#d19a66] ml-3">'09270075145'</p>
                 <div className='flex'>
                   <p className="mt-2 text-gray-300 pr-2">&gt;  </p>
                   <p className="mt-2 font-light text-gray-300">bherth.resume</p>
