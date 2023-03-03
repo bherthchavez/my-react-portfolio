@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { Link } from 'react-scroll';
 import Head from './Head';
@@ -12,18 +12,37 @@ import Experience from './Experience'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-
   const handleNav = () => {
     setNav(!nav);
   };
 
   nav ? document.body.classList.add("overflow-hidden") : document.body.classList.remove("overflow-hidden")
 
+  const [colorChange, setColorchange] = useState(false);
+  const [scrollY, setscrollY] = useState(window.scrollY);
+
+  const changeNavbarColor = () =>{
+
+     if(window.scrollY < scrollY){
+       setColorchange(true);
+     }
+     else{
+      setscrollY(window.scrollY)
+       setColorchange(false);
+     }
+  };
+  window.addEventListener('scroll', changeNavbarColor);
+
+  const classNav = window.scrollY ? 'bg-[#373d49] shadow-md': null
+
+
   return (
     <>
-      <div className='md:px-[60px] sm:px-[20px] z-20 fixed flex justify-between items-end h-[130px] w-full mx-auto  my-2 text-white bg-[#373d49] '>
-        <Link to='home' smooth={true} duration={500}>
-          <h1 className='w-full text-2xl font-bold mb-4 text-[#d19a66] px-4 cursor-pointer'>{!nav && 'bherth'}</h1>
+    <div
+        className={colorChange ? `${classNav} fixed flex justify-between ease-in-out px-4 sm:px-8 duration-300 items-center z-20 top-0 w-full h-16 text-white ` : `fixed flex justify-between items-center  z-20 w-full ease-in-out duration-300 top-[-100%] h-16 text-white`}
+      >
+           <Link to='home' smooth={true} duration={500}>
+          <h1 className='w-full text-2xl font-bold text-[#d19a66] cursor-pointer'>{!nav && 'bherth'}</h1>
         </Link>
         <ul className='hidden md:flex'>
           <li className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer'>
@@ -102,8 +121,6 @@ const Navbar = () => {
         </ul>
       </div>
       <div onClick={handleNav} className={nav ? 'z-10 opacity-[20%] mt-[100px] fixed w-full h-full bg-gradient-to-r from-gray-700 via-gray-800 to-gray-700' : 'hidden'}></div>
-
-
       <Side isNav={nav} />
       <Head isNav={nav} />
       <Experience isNav={nav} />
