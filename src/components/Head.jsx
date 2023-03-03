@@ -29,8 +29,8 @@ function Head(props) {
                 typeSpeed={100}
               />
             </div>
-            <p className='text-[#d19a66] font-bold md:text-lg'>
-              MERN STACK DEVELOPER
+            <p className='text-[#d19a66] font-bold md:text-lg uppercase'>
+             MERN Full Stack Web Developer
             </p>
           </div>
         </div>
