@@ -44,7 +44,7 @@ function Head(props) {
           <p className='my-4'>{aboutMe.substring(524)}</p>
           </p>
         }
-          <span onClick={()=> setReadMore(!readMore)} className={!readMore ? `cursor-pointer text-sm font-extrabold text-gray-400 hover:text-[#f8a04d]`:`cursor-pointer text-sm font-extrabold text-gray-500 hover:text-[#f8a04d]` }>{ !readMore ?` ...show more` : ` show less` }</span>
+          <span onClick={()=> setReadMore(!readMore)} className={!readMore ? `cursor-pointer text-sm font-extrabold text-gray-600 hover:text-[#f8a04d]`:`cursor-pointer text-sm font-extrabold text-gray-500 hover:text-[#f8a04d]` }>{ !readMore ?` ...show more` : ` show less` }</span>
         </p>
         <Link className='w-64 h-12 mb-16 md:mb-0' to='experience' smooth={true} duration={500}>
           <span className='whitespace-nowrap md:text-base text-sm border-[1px] md:border-2 group px-6 flex justify-between text-center items-center border-[#d19a66] w-[270px] md:w-[300px] rounded-md font-medium  py-3 text-[#d19a66] hover:bg-[#343943] hover:border-[#343943] cursor-pointer'>
