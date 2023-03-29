@@ -53,8 +53,8 @@ function Head(props) {
 
             :
             <div>
-              <p>{aboutMe.substring(0, 524)}</p>
-              <p className='my-4'>{aboutMe.substring(524)}</p>
+              <p>{aboutMe.substring(0, 529)}</p>
+              <p className='my-4'>{aboutMe.substring(529)}</p>
               <p onClick={() => setReadMore(!readMore)} className={!readMore ? `cursor-pointer text-sm font-extrabold text-gray-600 hover:text-[#f8a04d]` : `cursor-pointer text-sm font-extrabold text-gray-500 hover:text-[#f8a04d]`}>{!readMore ? ` ...show more` : ` show less`}</p>
             </div>
           }
