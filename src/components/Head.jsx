@@ -21,10 +21,10 @@ function Head(props) {
         <div className='max-w-[1240px]'>
           <div className='w-full my-4'>
             <p data-aos="fade-left"
-              data-aos-anchor="#example-anchor"
-              data-aos-offset="500" className='text-[#d19a66] md:text-lg'>
+              data-aos-delay="100" className='text-[#d19a66] md:text-lg'>
               Hi, my name is </p>
-            <div className='flex justify-start items-center'>
+            <div data-aos="fade-left"
+              data-aos-delay="200" className='flex justify-start items-center'>
               <p className='md:text-6xl sm:text-2xl text-3xl py-2 font-bold text-WHITE'>
                 &gt;
               </p>
@@ -35,15 +35,15 @@ function Head(props) {
               />
             </div>
             <p data-aos="fade-left"
-             data-aos-delay="100"
+              data-aos-delay="300"
               className='text-[#d19a66] font-bold md:text-lg uppercase'>
               MERN Full Stack Web Developer
             </p>
           </div>
         </div>
         <p data-aos="fade-left"
-          data-aos-delay="200"
-           className={readMore ? `text-gray-400 pt-2 pb-10 text-sm md:text-base` : `text-gray-500 pt-2 pb-10 text-sm md:text-base`}>
+          data-aos-delay="400"
+          className={readMore ? `text-gray-400 pt-2 pb-10 text-sm md:text-base` : `text-gray-500 pt-2 pb-10 text-sm md:text-base`}>
           {!readMore ?
             aboutMe.substring(0, 155)
             :
@@ -57,7 +57,7 @@ function Head(props) {
         </p>
         <Link className='w-64 h-12 mb-16 md:mb-0' to='experience' smooth={true} duration={500}>
           <span data-aos="fade-left"
-           data-aos-delay="300" className='whitespace-nowrap md:text-base text-sm border-[1px] md:border-2 group px-6 flex justify-between text-center items-center border-[#d19a66] w-[270px] md:w-[300px] rounded-md font-medium  py-3 text-[#d19a66] hover:bg-[#343943] hover:border-[#343943] cursor-pointer'>
+            data-aos-delay="500" className='whitespace-nowrap md:text-base text-sm border-[1px] md:border-2 group px-6 flex justify-between text-center items-center border-[#d19a66] w-[270px] md:w-[300px] rounded-md font-medium  py-3 text-[#d19a66] hover:bg-[#343943] hover:border-[#343943] cursor-pointer'>
             Chek out my experience!
             <span className='group-hover:rotate-90 duration-300'>
               <HiArrowNarrowRight className='ml-3 ' />
