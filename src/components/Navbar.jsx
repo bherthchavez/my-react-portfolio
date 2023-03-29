@@ -77,7 +77,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <div onClick={handleNav} className={nav ? 'block md:hidden  cursor-pointer rotate-180 duration-500' : 'block md:hidden  cursor-pointer rotate-0 duration-100'}>
+        <div data-aos="fade-down" data-aos-delay="2000" onClick={handleNav} className={nav ? 'block md:hidden  cursor-pointer rotate-180 duration-500' : 'block md:hidden  cursor-pointer rotate-0 duration-100'}>
           {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
         </div>
         <ul className={nav ? 'fixed z-20 left-0 top-0 w-[70%] h-full border-r shadow-2xl border-r-gray-600 bg-[#373d49] ease-in-out duration-300 bg-opacity-[85%]' : 'ease-in-out duration-300 fixed left-[-100%]'}>
