@@ -41,35 +41,35 @@ const Navbar = () => {
 
   return (
     <>
-    <div data-aos="fade-down"
+    <div 
         className={colorChange ? `${classNav} z-20 fixed flex justify-between ease-in-out px-4 sm:px-8 duration-500 items-center  top-0 w-full h-16 text-white ` : `fixed  z-20 flex justify-between items-center w-full ease-out-in duration-500 top-[-100%] h-16 text-white`}
       >
            <Link to='home' smooth={true} duration={500}>
-          <h1 className='w-full text-2xl font-bold text-[#d19a66] cursor-pointer'>{!nav && 'bherth'}</h1>
+          <h1 data-aos="fade-down" data-aos-delay="1800" className='w-full text-2xl font-bold text-[#d19a66] cursor-pointer'>{!nav && 'bherth'}</h1>
         </Link>
         <ul className='hidden md:flex'>
-          <li className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer'>
+          <li data-aos="fade-down"  data-aos-delay="1900" className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer'>
             <Link to='experience' smooth={true} duration={500}>
               <span className='bg-left-bottom bg-gradient-to-r from-[#d19a66] to-[#d19a66] bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_3px] transition-all duration-500 ease-out'>
                 Experience
               </span>
             </Link>
           </li>
-          <li className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer'>
+          <li data-aos="fade-down"  data-aos-delay="2000" className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer'>
             <Link to='skills' smooth={true} duration={500}>
               <span className='bg-left-bottom bg-gradient-to-r from-[#d19a66] to-[#d19a66] bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_3px] transition-all duration-500 ease-out'>
                 Skills
               </span>
             </Link>
           </li>
-          <li className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer'>
+          <li data-aos="fade-down"  data-aos-delay="2200" className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer'>
             <Link to='projects' smooth={true} duration={500}>
               <span className='bg-left-bottom bg-gradient-to-r from-[#d19a66] to-[#d19a66] bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_3px] transition-all duration-500 ease-out'>
                 Projects
               </span>
             </Link>
           </li>
-          <li className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer'>
+          <li data-aos="fade-down"  data-aos-delay="2400" className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer'>
             <Link to='about' smooth={true} duration={500}>
               <span className='bg-left-bottom bg-gradient-to-r from-[#d19a66] to-[#d19a66] bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_3px] transition-all duration-500 ease-out'>
                 Contact

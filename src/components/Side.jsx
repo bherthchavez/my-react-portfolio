@@ -17,7 +17,7 @@ const Side = () => {
 
   return (
     <div>
-      <div data-aos="fade-up" className='fixed bottom-0 left-[4%] flex justify-between w-auto h-[350px]'>
+      <div data-aos="fade-up" data-aos-delay="2900" className='fixed bottom-0 left-[4%] flex justify-between w-auto h-[350px]'>
         <div className='hidden lg:flex flex-col'>
           <ul>
             <li className='w-auto h-[50px] flex justify-between items-center'>
@@ -48,7 +48,7 @@ const Side = () => {
         </div>
       </div>
 
-      <div data-aos="fade-up" className='fixed bottom-0 right-[4%] flex justify-between w-auto h-[350px]'>
+      <div data-aos="fade-up" data-aos-delay="3000" className='fixed bottom-0 right-[4%] flex justify-between w-auto h-[350px]'>
         <div className='hidden lg:flex flex-col'>
           <ul>
             <li className='w-auto h-auto flex justify-between items-center'>
