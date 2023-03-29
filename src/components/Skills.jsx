@@ -34,7 +34,7 @@ const Skills = (props) => {
     return (
         <div name='skills' className={props.isNav ? 'w-full h-auto sm:h-screen text-gray-300 mt-24 md:mt-0 blur' : 'w-full h-auto sm:h-screen text-gray-300 mt-24 md:mt-0'}>
             <div className='max-w-[800px] mx-auto p-4 flex flex-col justify-center h-full'>
-                <div data-aos="fade-left">
+                <div data-aos="fade-up">
                     <p className='text-2xl md:text-3xl font-bold inline'>Skills</p>
                     <p className='py-1 md:py-4 text-sm md:text-base '> These are the technologies I've worked with</p>
                 </div>

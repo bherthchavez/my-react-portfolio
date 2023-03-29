@@ -32,7 +32,7 @@ const About = (props) => {
   return (
     <div name='experience' className={props.isNav ? 'w-full h-screen text-gray-300 blur-sm' : 'w-full h-screen text-gray-300'}>
       <div className='max-w-[800px] mx-auto p-4 flex flex-col justify-center h-full'>
-        <div data-aos="fade-left">
+        <div data-aos="fade-up">
           <p className='text-2xl md:text-3xl font-bold inline'>Experience</p>
           <p className='py-1 md:py-4 text-sm md:text-base '> Relevant Work Experience</p>
         </div>

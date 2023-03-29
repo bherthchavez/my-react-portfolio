@@ -14,7 +14,7 @@ const About = (props) => {
   return (
     <div name='about' className={props.isNav ? 'w-full h-screen text-gray-300 blur' : 'w-full h-screen text-gray-300'}>
       <div className='max-w-[800px] mx-auto p-4 flex flex-col justify-center h-full'>
-        <div data-aos="fade-left">
+        <div data-aos="fade-up">
           <p className='text-2xl md:text-3xl font-bold inline'>Contact</p>
           <p className='py-1 md:py-4 text-sm md:text-base '> I am available for hire and open to any ideas of cooperation.</p>
         </div>
