@@ -1,6 +1,6 @@
 export const ExpData = [
     {
-        position: 'Graphic-Web-Designer',
+        position: 'Graphic-Web-Developer',
         companyName: 'ALFTOON MARKETING',
         website: 'https://alftoon.qa/',
         date: 'November 2021 – 2023',
@@ -16,7 +16,7 @@ export const ExpData = [
         jd: 'Worked with a team of web and mobile developers to build a marketing presentation for the cloud-based ERP. Creating and designing user’s manual and documents for every software product'
     },
     {
-        position: 'Graphic-Web-Designer',
+        position: 'Graphic-Web-Developer',
         companyName: 'Blue Media Networks',
         website: '/',
         date: 'July 2018 – 2018',
