@@ -18,7 +18,7 @@ const About = (props) => {
           <p className='text-2xl md:text-3xl font-bold inline'>Contact</p>
           <p className='py-1 md:py-4 text-sm md:text-base '> I am available for hire and open to any ideas of cooperation.</p>
         </div>
-        <div data-aos="fade-up" className='flex flex-col justify-center'>
+        <div data-aos="fade-up" data-aos-delay="100" className='flex flex-col justify-center'>
           <div className="rounded-xl overflow-hidden shadow-xl max-w-[800px] ">
             <div className=" bg-[#21252b] h-10 rounded-t-xl">
               <button className='bg-[#ad443c] w-[15px] h-[15px] rounded-full font-medium ml-4 my-3'></button>
@@ -86,7 +86,7 @@ const About = (props) => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-up" className="pt-9 mx-auto md:m-0">
+        <div data-aos="fade-up"  className="pt-9 mx-auto md:m-0">
           <a href='mailto:bherthchavez@gmail.com' target='_blank' rel='noreferrer noopener' className='md:text-base text-sm border-[1px] md:border-2 group px-11 flex justify-between text-center items-center border-[#d19a66] w-40 rounded-md font-medium  py-3 text-[#d19a66] hover:bg-[#343943] shadow-xl'>
             Hire Me
           </a>

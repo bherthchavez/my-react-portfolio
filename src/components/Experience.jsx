@@ -36,7 +36,7 @@ const About = (props) => {
           <p className='text-2xl md:text-3xl font-bold inline'>Experience</p>
           <p className='py-1 md:py-4 text-sm md:text-base '> Relevant Work Experience</p>
         </div>
-        <div data-aos="fade-up" className='flex flex-col justify-center'>
+        <div data-aos="fade-up" data-aos-delay="100" className='flex flex-col justify-center'>
           <div className="rounded-xl overflow-hidden shadow-xl max-w-[800px] ">
             <div className=" bg-[#21252b] h-10 rounded-t-xl">
               <button className='bg-[#ad443c] w-[15px] h-[15px] rounded-full font-medium ml-4 my-3'></button>
