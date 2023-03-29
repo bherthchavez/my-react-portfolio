@@ -11,7 +11,32 @@ import Experience from './Experience'
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+Aos.init();
 
+// You can also pass an optional settings object
+// below listed default settings
+Aos.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
 
 const Navbar = () => {
 
@@ -81,15 +106,15 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <div data-aos="fade-down" data-aos-delay="2000" onClick={handleNav} className={nav ? 'block md:hidden  cursor-pointer rotate-180 duration-500' : 'block md:hidden  cursor-pointer rotate-0 duration-100'}>
-          {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
+
+        <div   onClick={handleNav} className={nav ? 'block md:hidden  cursor-pointer rotate-180 duration-500' : 'block md:hidden  cursor-pointer rotate-0 duration-100'}>
+          {nav ? <AiOutlineClose size={25} className='data-aos="fade-down" data-aos-delay="2000"' /> : <AiOutlineMenu size={25} className='data-aos="fade-down" data-aos-delay="2000"' />}
         </div>
+
         <ul className={nav ? 'fixed z-20 left-0 top-0 w-[70%] h-full border-r shadow-2xl border-r-gray-600 bg-[#373d49] ease-in-out duration-300 bg-opacity-[85%]' : 'ease-in-out duration-300 fixed left-[-100%]'}>
           <Link to='home' smooth={true} duration={500}>
             <h1 onClick={handleNav} className='w-full text-xl font-bold mb-4 text-[#d19a66] px-4 cursor-pointer p-4 '>bherth</h1>
           </Link>
-
-
           <Link to='experience' smooth={true} duration={500}>
             <li onClick={handleNav} className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer border-b border-gray-600'>
               <span className='bg-left-bottom bg-gradient-to-r from-[#d19a66] to-[#d19a66] bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_3px] transition-all duration-500 ease-out'>
@@ -97,9 +122,6 @@ const Navbar = () => {
               </span>
             </li>
           </Link>
-
-
-
           <Link to='skills' smooth={true} duration={500}>
             <li onClick={handleNav} className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer border-b border-gray-600'>
               <span className='bg-left-bottom bg-gradient-to-r from-[#d19a66] to-[#d19a66] bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_3px] transition-all duration-500 ease-out'>
@@ -107,8 +129,6 @@ const Navbar = () => {
               </span>
             </li>
           </Link>
-
-
           <Link to='projects' smooth={true} duration={500}>
             <li onClick={handleNav} className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer border-b border-gray-600'>
               <span className='bg-left-bottom bg-gradient-to-r from-[#d19a66] to-[#d19a66] bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_3px] transition-all duration-500 ease-out'>
@@ -116,7 +136,6 @@ const Navbar = () => {
               </span>
             </li>
           </Link>
-
           <Link to='about' smooth={true} duration={500}>
             <li onClick={handleNav} className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer border-b border-gray-600'>
               <span className='bg-left-bottom bg-gradient-to-r from-[#d19a66] to-[#d19a66] bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_3px] transition-all duration-500 ease-out'>
