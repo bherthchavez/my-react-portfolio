@@ -1,19 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   FaGithub,
 } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
-
 import { BsFillPersonLinesFill, BsInstagram } from 'react-icons/bs';
 import Resume from '../assets/resume.pdf';
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Side = () => {
+
+  useEffect(function () {
+    Aos.init({ duration: 1000 });
+  }, []);
 
 
   return (
     <div>
-      <div className='fixed bottom-0 left-[4%] flex justify-between w-auto h-[350px]'>
+      <div data-aos="fade-up" className='fixed bottom-0 left-[4%] flex justify-between w-auto h-[350px]'>
         <div className='hidden lg:flex flex-col'>
           <ul>
             <li className='w-auto h-[50px] flex justify-between items-center'>
@@ -44,7 +48,7 @@ const Side = () => {
         </div>
       </div>
 
-      <div className='fixed bottom-0 right-[4%] flex justify-between w-auto h-[350px]'>
+      <div data-aos="fade-up" className='fixed bottom-0 right-[4%] flex justify-between w-auto h-[350px]'>
         <div className='hidden lg:flex flex-col'>
           <ul>
             <li className='w-auto h-auto flex justify-between items-center'>

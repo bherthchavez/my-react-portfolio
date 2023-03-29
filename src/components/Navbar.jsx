@@ -1,4 +1,4 @@
-import React, {  useState } from 'react';
+import React, {  useEffect, useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { Link } from 'react-scroll';
 import Head from './Head';
@@ -8,13 +8,17 @@ import Skills from './Skills'
 import Footer from './Footer'
 import Projects from './Projects'
 import Experience from './Experience'
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
   };
+  useEffect(function () {
+    Aos.init({ duration: 1000 });
+  }, []);
 
   nav ? document.body.classList.add("overflow-hidden") : document.body.classList.remove("overflow-hidden")
 
@@ -37,7 +41,7 @@ const Navbar = () => {
 
   return (
     <>
-    <div
+    <div data-aos="fade-down"
         className={colorChange ? `${classNav} z-20 fixed flex justify-between ease-in-out px-4 sm:px-8 duration-500 items-center  top-0 w-full h-16 text-white ` : `fixed  z-20 flex justify-between items-center w-full ease-out-in duration-500 top-[-100%] h-16 text-white`}
       >
            <Link to='home' smooth={true} duration={500}>

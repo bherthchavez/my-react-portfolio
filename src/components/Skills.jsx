@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HTML from '../assets/html.png';
 import CSS from '../assets/css.png';
 import JavaScript from '../assets/javascript.png';
@@ -22,16 +22,23 @@ import Jquery from '../assets/jquery.png';
 import Redux from '../assets/redux.png';
 import Express from '../assets/express.png';
 import Render from '../assets/render.png';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Skills = (props) => {
+
+    useEffect(function () {
+        Aos.init({ duration: 1000 });
+      }, []);
+
     return (
         <div name='skills' className={props.isNav ? 'w-full h-auto sm:h-screen text-gray-300 mt-24 md:mt-0 blur' : 'w-full h-auto sm:h-screen text-gray-300 mt-24 md:mt-0'}>
             <div className='max-w-[800px] mx-auto p-4 flex flex-col justify-center h-full'>
-                <div>
+                <div data-aos="fade-left">
                     <p className='text-2xl md:text-3xl font-bold inline'>Skills</p>
                     <p className='py-1 md:py-4 text-sm md:text-base '> These are the technologies I've worked with</p>
                 </div>
-                <div className='flex flex-col justify-center'>
+                <div data-aos="fade-up" className='flex flex-col justify-center'>
                     <div className="rounded-xl overflow-hidden shadow-xl max-w-[800px] ">
                         <div className=" bg-[#21252b] h-10 rounded-t-xl">
                             <button className='bg-[#ad443c] w-[15px] h-[15px] rounded-full font-medium ml-4 my-3'></button>

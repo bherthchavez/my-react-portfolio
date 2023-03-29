@@ -1,11 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Acc1 from '../assets/el-4.PNG';
 import Acc5 from '../assets/el-5.PNG';
 import hr1 from '../assets/hr1.PNG';
 import hr2 from '../assets/hr2.PNG';
 import Folder from '../assets/folder.png';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Skills = (props) => {
+
+    useEffect(function () {
+        Aos.init({ duration: 1000 });
+      }, []);
+    
 
     const [nav, setNav] = useState(0);
 
@@ -19,11 +26,11 @@ const Skills = (props) => {
     return (
         <div name='projects' className={props.isNav ? 'w-full h-auto sm:h-screen text-gray-300 mt-28 md:mt-0 blur' : 'w-full h-auto sm:h-screen text-gray-300 mt-28 md:mt-0'}>
             <div className='max-w-[800px] mx-auto p-4 flex flex-col justify-center h-full'>
-                <div>
+                <div data-aos="fade-left">
                     <p className='text-2xl md:text-3xl font-bold inline'>Current Projects</p>
                     <p className='py-1 md:py-4 text-sm md:text-base'>(more coming soon)</p>
                 </div>
-                <div className='flex flex-col justify-center'>
+                <div data-aos="fade-up" className='flex flex-col justify-center'>
                     <div className="rounded-xl overflow-hidden text-sm sm:text-xm shadow-xl max-w-[800px] ">
                         <div className=" bg-[#21252b] h-10 rounded-t-xl">
                             <button className='bg-[#ad443c] w-[15px] h-[15px] rounded-full font-medium ml-4 my-3'></button>

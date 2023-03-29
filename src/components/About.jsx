@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Typed from 'react-typed';
 import Resume from '../assets/resume.pdf';
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 const About = (props) => {
+
+  useEffect(function () {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <div name='about' className={props.isNav ? 'w-full h-screen text-gray-300 blur' : 'w-full h-screen text-gray-300'}>
       <div className='max-w-[800px] mx-auto p-4 flex flex-col justify-center h-full'>
-        <div>
+        <div data-aos="fade-left">
           <p className='text-2xl md:text-3xl font-bold inline'>Contact</p>
           <p className='py-1 md:py-4 text-sm md:text-base '> I am available for hire and open to any ideas of cooperation.</p>
         </div>
-        <div className='flex flex-col justify-center'>
+        <div data-aos="fade-up" className='flex flex-col justify-center'>
           <div className="rounded-xl overflow-hidden shadow-xl max-w-[800px] ">
             <div className=" bg-[#21252b] h-10 rounded-t-xl">
               <button className='bg-[#ad443c] w-[15px] h-[15px] rounded-full font-medium ml-4 my-3'></button>
@@ -78,7 +86,7 @@ const About = (props) => {
             </div>
           </div>
         </div>
-        <div className="pt-9 mx-auto md:m-0">
+        <div data-aos="fade-up" className="pt-9 mx-auto md:m-0">
           <a href='mailto:bherthchavez@gmail.com' target='_blank' rel='noreferrer noopener' className='md:text-base text-sm border-[1px] md:border-2 group px-11 flex justify-between text-center items-center border-[#d19a66] w-40 rounded-md font-medium  py-3 text-[#d19a66] hover:bg-[#343943] shadow-xl'>
             Hire Me
           </a>
