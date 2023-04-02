@@ -16,7 +16,7 @@ const Side = () => {
 
 
   return (
-    <div>
+    <>
       <div data-aos="fade-up" data-aos-delay="2900" className='fixed bottom-0 left-[4%] flex justify-between w-auto h-[350px]'>
         <div className='hidden lg:flex flex-col'>
           <ul>
@@ -63,7 +63,7 @@ const Side = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
