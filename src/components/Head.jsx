@@ -46,7 +46,7 @@ function Head(props) {
           {!readMore ?
             <span data-aos="fade-left"
                 data-aos-delay="400" >
-              <p >{aboutMe.substring(0, 155)}  <span onClick={() => setReadMore(!readMore)} className={!readMore ? `cursor-pointer text-base font-extrabold text-gray-600 hover:text-[#f8a04d]` : `cursor-pointer text-base font-extrabold text-gray-500 hover:text-[#f8a04d]`}>{!readMore ? ` ...show more` : ` show less`}</span></p>
+              <p >{aboutMe.substring(0, 155)}  <span onClick={() => setReadMore(!readMore)} className={!readMore ? `cursor-pointer text-sm font-extrabold text-gray-600 hover:text-[#f8a04d]` : `cursor-pointer text-sm font-extrabold text-gray-500 hover:text-[#f8a04d]`}>{!readMore ? ` ...show more` : ` show less`}</span></p>
              
 
             </span>
@@ -55,7 +55,7 @@ function Head(props) {
             <div>
               <p>{aboutMe.substring(0, 529)}</p>
               <p className='my-4'>{aboutMe.substring(529)}</p>
-              <p onClick={() => setReadMore(!readMore)} className={!readMore ? `cursor-pointer text-base font-extrabold text-gray-600 hover:text-[#f8a04d]` : `cursor-pointer text-base font-extrabold text-gray-500 hover:text-[#f8a04d]`}>{!readMore ? ` ...show more` : ` show less`}</p>
+              <p onClick={() => setReadMore(!readMore)} className={!readMore ? `cursor-pointer text-sm font-extrabold text-gray-600 hover:text-[#f8a04d]` : `cursor-pointer text-sm font-extrabold text-gray-500 hover:text-[#f8a04d]`}>{!readMore ? ` ...show more` : ` show less`}</p>
             </div>
           }
         </div>
