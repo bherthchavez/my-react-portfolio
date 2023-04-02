@@ -13,7 +13,7 @@ import Resume from '../assets/resume.pdf';
 const About = (props) => {
   return (
 
-    <div className={props.isNav ? 'max-w-[800px] h-auto mx-auto p-4 blur text-sm' : 'max-w-[800px] h-auto mx-auto p-4 text-sm'}>
+    <div className={props.isNav ? 'max-w-[800px] h-auto mx-auto p-4 blur text-xs lg:text-base' : 'max-w-[800px] h-auto mx-auto p-4 text-xs lg:text-base'}>
       <div className="flex mt-0 justify-center items-center mb-1">
         <span className="my-auto mx-2 text-gray-400 "> Build with: </span>
       </div>
@@ -36,24 +36,24 @@ const About = (props) => {
         </p>
         <ul className="flex lg:hidden justify-center">
           <li>
-            <a href='https://github.com/bherthchavez' target='_blank' rel='noreferrer noopener' className='transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300 flex justify-between items-center w-full text-gray-500 hover:text-[#d19a66]'>
-              <FaGithub size={15} className='m-4 shadow-xl' />
+            <a href='https://github.com/bherthchavez' target='_blank' rel='noreferrer noopener' className='transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300 flex justify-between items-center text-gray-500 hover:text-[#d19a66]'>
+              <FaGithub size={15} className='m-2 shadow-xl' />
 
             </a>
           </li>
           <li>
-            <a href='https://www.linkedin.com/in/julbert-pruel-65a975129/' target='_blank' rel='noreferrer noopener' className='transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300 flex justify-between items-center w-full text-gray-500 hover:text-[#d19a66]'>
-              <FaLinkedinIn size={15} className='m-4 shadow-xl' />
+            <a href='https://www.linkedin.com/in/julbert-pruel-65a975129/' target='_blank' rel='noreferrer noopener' className='transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300 flex justify-between items-center  text-gray-500 hover:text-[#d19a66]'>
+              <FaLinkedinIn size={15} className='m-2 shadow-xl' />
             </a>
           </li>
           <li>
-            <a href='https://www.instagram.com/bherth_chavez/' target='_blank' rel='noreferrer noopener' className='flex justify-between items-center w-full text-gray-500 hover:text-[#d19a66]' >
-              <BsInstagram size={15} className='m-4 shadow-xl transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300' />
+            <a href='https://www.instagram.com/bherth_chavez/' target='_blank' rel='noreferrer noopener' className='flex justify-between items-center  text-gray-500 hover:text-[#d19a66] transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300' >
+              <BsInstagram size={15} className='m-2 shadow-xl transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300' />
             </a>
           </li>
           <li>
-            <a href={Resume} title='Download Resume' className='flex justify-between items-center w-full text-gray-500 hover:text-[#d19a66] transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300' download>
-              <BsFillPersonLinesFill size={15} className='m-4 shadow-xl' />
+            <a href={Resume} title='Download Resume' className='flex justify-between items-center  text-gray-500 hover:text-[#d19a66] transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300' download>
+              <BsFillPersonLinesFill size={15} className='m-2 shadow-xl' />
             </a>
           </li>
         </ul>
