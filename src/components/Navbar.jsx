@@ -47,9 +47,12 @@ const Navbar = () => {
       <div
         className={colorChange ? `${classNav} z-20 fixed flex justify-between ease-in-out px-4 sm:px-8 duration-500 items-center  top-0 w-screen h-16 text-white ` : `fixed  z-20 flex justify-between items-center w-screen ease-out-in duration-500 top-[-100%] h-16 text-white`}
       >
+      <div className='flex gap-2'>
         <Link to='home' smooth={true} duration={500}>
           <h1 data-aos="fade-down" data-aos-delay="1800" className='w-full text-2xl font-bold text-[#d19a66] cursor-pointer'>{!nav && 'bherth'}</h1>
         </Link>
+      {/* <img data-aos="flip-left" src='https://www.codewars.com/users/bherthchavez/badges/small' alt='Me' className='' /> */}
+      </div>
         <ul className='hidden md:flex'>
           <li data-aos="fade-down" data-aos-delay="1900" className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer'>
             <Link to='experience' smooth={true} duration={500}>
