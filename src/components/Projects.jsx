@@ -11,8 +11,8 @@ const Skills = (props) => {
 
     useEffect(function () {
         Aos.init({ duration: 1000 });
-      }, []);
-    
+    }, []);
+
 
     const [nav, setNav] = useState(0);
 
@@ -75,13 +75,17 @@ const Skills = (props) => {
                                                 <li> 16 </li>
                                                 <li> 17 </li>
                                                 <li> 18 </li>
+                                                <li> 19 </li>
+                                                <li> 20 </li>
+                                                <li> 21 </li>
+                                                <li> 22 </li>
                                             </ul>
                                         </div>
                                         {nav === 0 ?
                                             <div className='h-auto text-start  mx-2 pt-3'>
                                                 <p className='text-gray-500'> {'/* EL - Accounting Cloud Based */'} </p>
                                                 <div className='flex'>
-                                                    <p className='text-[#4888f0] md:mt-[25px]'> const Accouting_Details =  </p>
+                                                    <p className='text-[#d19a66] md:mt-[25px] font-bold'> Accouting_Details =  </p>
                                                     <p className='text-gray-300 ml-2 md:mt-[25px]'>  {'{'} </p>
                                                 </div>
                                                 <div className='flex'>
@@ -98,20 +102,34 @@ const Skills = (props) => {
                                                 </div>
                                                 <p className='text-gray-300 ml-1 md:ml-7'>  expenses from
                                                     business bank accounts and can approve and
-                                                    print bills and payment vouchers </p>
+                                                    print bills and payment vouchers, </p>
                                                 <div className='flex'>
                                                     <p className='text-[#d19a66] ml-1 md:ml-7 mt-[17px] '>  built with: </p>
                                                     <p className='text-gray-300 ml-1 mt-[17px] '> NODE JS, EXPRESS </p>
                                                 </div>
                                                 <p className='text-gray-300 ml-1  md:ml-7 mt-[3px] '> BOOTSTRAP, MONGO DB, HEROKU, </p>
-                                                <p className='text-gray-00 ml-3 mt-[20px]'>  {'};'} </p>
+                                                <p className='text-gray-00 ml-3 mt-[10px] mb-12'>  {'};'} </p>
+
+                                                <div className='flex flex-col '>
+                                                    <a href='https://www.suwaija-erp.com/' target='_blank' rel='noreferrer noopener'
+                                                        className='text-[#4888f0] hover:text-blue-600  font-bold'> View Live Demo </a>
+                                                    <p className='text-gray-500 font-light text-xs'>Use credential below to login:</p>
+                                                </div>
+                                                <div className='flex'>
+                                                    <p className='text-gray-500  mt-[10px] '>  Username: </p>
+                                                    <p className='text-gray-300 mt-[10px] '> user </p>
+                                                </div>
+                                                <div className='flex'>
+                                                    <p className='text-gray-500  '>  Password: </p>
+                                                    <p className='text-gray-300 '> user </p>
+                                                </div>
 
                                             </div>
                                             :
                                             <div className='h-auto text-start  mx-2 pt-3'>
                                                 <p className='text-gray-500'> {'/* HR System */'} </p>
                                                 <div className='flex'>
-                                                    <p className='text-[#4888f0] md:mt-[25px]'> const HR_Details = </p>
+                                                    <p className='text-[#d19a66] md:mt-[25px] font-bold'> HR_Details = </p>
                                                     <p className='text-gray-300 ml-2 md:mt-[25px]'>  {'{'} </p>
                                                 </div>
                                                 <div className='flex'>
@@ -124,17 +142,30 @@ const Skills = (props) => {
                                                 </div>
                                                 <div className='flex'>
                                                     <p className='text-[#d19a66] ml-1 md:ml-7 mt-[15px] '> description: </p>
-                                                    <p className='text-gray-300 ml-1 mt-[15px] '> It includes features   </p>
+                                                    <p className='text-gray-300 ml-1 mt-[15px] '> Managing employee details   </p>
                                                 </div>
-                                                <p className='text-gray-300 ml-1 md:ml-7'> such as employee document management with expiry tracking,
-                                                    attendance management, and task
-                                                    management </p>
+                                                <p className='text-gray-300 ml-1 md:ml-7'>  and files. Secure file storage using Cloudinary. The system provides a mobile-friendly interface,</p>
                                                 <div className='flex'>
                                                     <p className='text-[#d19a66] ml-1 md:ml-7 mt-[17px] '>  built with: </p>
                                                     <p className='text-gray-300 ml-1 mt-[17px] '> MONGO DB, EXPRESS,</p>
                                                 </div>
                                                 <p className='text-gray-300 ml-1  md:ml-7 mt-[3px] '>  REACT, NODE, REDUX, TAILWIND. RENDER </p>
-                                                <p className='text-gray-00 ml-3 mt-[20px]'>  {'};'} </p>
+                                                <p className='text-gray-00 ml-3 mt-[10px] mb-12'>  {'};'} </p>
+
+                                                
+                                                <div className='flex flex-col'>
+                                                    <a href='https://hr-mern-frontend.onrender.com/' target='_blank' rel='noreferrer noopener'
+                                                        className='text-[#4888f0] hover:text-blue-600  font-bold'> View Live Demo </a>
+                                                    <p className='text-gray-500 font-light text-xs'>Use credential below to login:</p>
+                                                </div>
+                                                <div className='flex'>
+                                                    <p className='text-gray-500  mt-[10px] '>  Username: </p>
+                                                    <p className='text-gray-300 mt-[10px] '> admin </p>
+                                                </div>
+                                                <div className='flex'>
+                                                    <p className='text-gray-500  '>  Password: </p>
+                                                    <p className='text-gray-300 '> admin </p>
+                                                </div>
 
                                             </div>
                                         }
@@ -144,7 +175,7 @@ const Skills = (props) => {
 
                                 <div className='h-auto m-2 md:m-0'>
                                     <div className='relative'>
-                                        <img className='w-17 h-17 md:rotate-10 rounded-2xl border-2 border-gray-700 md:scale-[85%] md:translate-x-20 md:skew-x-30 md:opacity-70 hover:opacity-100 hover:transform-none' src={nav === 0 ?Acc1 : hr1} alt="/" />
+                                        <img className='w-17 h-17 md:rotate-10 rounded-2xl border-2 border-gray-700 md:scale-[85%] md:translate-x-20 md:skew-x-30 md:opacity-70 hover:opacity-100 hover:transform-none' src={nav === 0 ? Acc1 : hr1} alt="/" />
                                         <img className='w-17 h-17 mx-0 absolute rounded-2xl border-2 border-gray-700 opacity-0 top-32 md:scale-75 md:translate-x-20 md:skew-x-30 md:opacity-70 md:hover:opacity-100 md:hover:transform-none' src={nav === 0 ? Acc5 : hr2} alt="/" />
                                     </div>
 

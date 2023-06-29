@@ -22,6 +22,10 @@ import Jquery from '../assets/jquery.png';
 import Redux from '../assets/redux.png';
 import Express from '../assets/express.png';
 import Render from '../assets/render.png';
+import vercel from '../assets/vercel.jpg';
+import vite from '../assets/Vitejs.png';
+import ts from '../assets/Typescript.png';
+import next from '../assets/nextjs.png';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -63,6 +67,10 @@ const Skills = (props) => {
                                     <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={JavaScript} alt="javascript icon" />
                                         <p className='ml-2 text-gray-400  pt-1'>javascript</p>
+                                    </div>
+                                    <div className='flex ml-3 my-4'>
+                                        <img className='w-7 h-7 mx-0' src={ts} alt="javascript icon" />
+                                        <p className='ml-2 text-gray-400  pt-1'>typescript</p>
                                     </div>
                                     <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={MySQL} alt="mysql icon" />
@@ -113,6 +121,10 @@ const Skills = (props) => {
                                         <p className='ml-2 text-gray-400  pt-1'>react</p>
                                     </div>
                                     <div className='flex ml-3 my-4'>
+                                        <img className='w-7 h-7 mx-0' src={next} alt="react icon" />
+                                        <p className='ml-2 text-gray-400  pt-1'>next</p>
+                                    </div>
+                                    <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={Node} alt="node icon" />
                                         <p className='ml-2 text-gray-400 pt-1'>node</p>
                                     </div>
@@ -141,6 +153,10 @@ const Skills = (props) => {
                                         <p className='ml-2 text-gray-400  pt-1'>github</p>
                                     </div>
                                     <div className='flex ml-3 my-4'>
+                                        <img className='w-7 h-7 mx-0' src={vite} alt="github icon" />
+                                        <p className='ml-2 text-gray-400  pt-1'>vite</p>
+                                    </div>
+                                    <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={Netlify} alt="netlify icon" />
                                         <p className='ml-2 text-gray-400  pt-1'>netlify</p>
                                     </div>
@@ -151,6 +167,10 @@ const Skills = (props) => {
                                     <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={Render} alt="heroku icon" />
                                         <p className='ml-2 text-gray-400 pt-1'>render</p>
+                                    </div>
+                                    <div className='flex ml-3 my-4'>
+                                        <img className='w-7 h-7 mx-0' src={vercel} alt="wordpress icon" />
+                                        <p className='ml-2 text-gray-400  pt-1'>vercel</p>
                                     </div>
                                     <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={Wordpress} alt="wordpress icon" />

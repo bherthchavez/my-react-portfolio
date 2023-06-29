@@ -14,7 +14,6 @@ import "aos/dist/aos.css";
 
 const Navbar = () => {
 
-
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
