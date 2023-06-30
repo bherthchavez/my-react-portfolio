@@ -7,7 +7,7 @@ import {
 } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill, BsInstagram } from 'react-icons/bs';
-import Resume from '../assets/resume.pdf';
+import Resume from '../assets/Julbert Pruel.pdf';
 
 
 const About = (props) => {
@@ -52,7 +52,7 @@ const About = (props) => {
             </a>
           </li>
           <li>
-            <a href={Resume} title='Download Resume' className='flex justify-between items-center  text-gray-500 hover:text-[#d19a66] transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300' download>
+            <a href={Resume} title='Download Resume' className='flex justify-between items-center  text-gray-500 hover:text-[#d19a66] transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300' download="Julbert Pruel.pdf">
               <BsFillPersonLinesFill size={15} className='m-2 shadow-xl' />
             </a>
           </li>

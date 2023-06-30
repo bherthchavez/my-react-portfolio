@@ -4,7 +4,7 @@ import {
 } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill, BsInstagram } from 'react-icons/bs';
-import Resume from '../assets/resume.pdf';
+import Resume from '../assets/Julbert Pruel.pdf';
 import Aos from "aos";
 import "aos/dist/aos.css";
 

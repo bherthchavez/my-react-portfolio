@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Typed from 'react-typed';
-import Resume from '../assets/resume.pdf';
+import Resume from '../assets/Julbert Pruel.pdf';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
