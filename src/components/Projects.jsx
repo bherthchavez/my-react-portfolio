@@ -218,7 +218,7 @@ const Skills = (props) => {
                                     <div className='relative'>
                                     { nav === 2 ?
                                         
-                                        <img className='absolute top-10 w-17 h-17 md:rotate-10 rounded-2xl border-2 border-gray-700 md:scale-[85%] md:translate-x-20 md:skew-x-30 md:opacity-70 hover:opacity-100 hover:transform-none' src={Keep} alt="/" />
+                                        <img className='sm:absolute sm:top-10 w-17 h-17 md:rotate-10 rounded-2xl border-2 border-gray-700 md:scale-[85%] md:translate-x-20 md:skew-x-30 md:opacity-70 hover:opacity-100 hover:transform-none' src={Keep} alt="/" />
                                         :
                                         <>
                                         <img className='w-17 h-17 md:rotate-10 rounded-2xl border-2 border-gray-700 md:scale-[85%] md:translate-x-20 md:skew-x-30 md:opacity-70 hover:opacity-100 hover:transform-none' src={nav === 0 ? Acc1 : hr1} alt="/" />
