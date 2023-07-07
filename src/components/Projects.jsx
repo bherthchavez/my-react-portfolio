@@ -127,7 +127,7 @@ const Skills = (props) => {
 
                                                 <div className='flex flex-col '>
                                                     <a href='https://www.suwaija-erp.com/' target='_blank' rel='noreferrer noopener'
-                                                        className='text-[#4888f0] hover:text-blue-600  font-bold'> View Live Demo </a>
+                                                        className='text-[#4888f0] hover:text-blue-600 underline font-bold'> View Live Demo </a>
                                                     <p className='text-gray-500 font-light text-xs'>Use credential below to login:</p>
                                                 </div>
                                                 <div className='flex'>
@@ -171,7 +171,7 @@ const Skills = (props) => {
                                                 
                                                 <div className='flex flex-col'>
                                                     <a href='https://hr-mern-frontend.onrender.com/' target='_blank' rel='noreferrer noopener'
-                                                        className='text-[#4888f0] hover:text-blue-600  font-bold'> View Live Demo </a>
+                                                        className='text-[#4888f0] hover:text-blue-600 underline font-bold'> View Live Demo </a>
                                                     <p className='text-gray-500 font-light text-xs'>Use credential below to login:</p>
                                                 </div>
                                                 <div className='flex'>
@@ -205,7 +205,7 @@ const Skills = (props) => {
                                                 
                                                 <div className='flex flex-col'>
                                                     <a href='https://react-ts-redux-todo.vercel.app' target='_blank' rel='noreferrer noopener'
-                                                        className='text-[#4888f0] hover:text-blue-600  font-bold'> View Live Demo </a>
+                                                        className='text-[#4888f0] hover:text-blue-600 underline font-bold'> View Live Demo </a>
                                                 </div>
 
                                             </div>
