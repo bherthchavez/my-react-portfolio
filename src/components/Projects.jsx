@@ -80,9 +80,10 @@ const Skills = (props) => {
                                                 <li> 12 </li>
                                                 <li> 13 </li>
                                                 <li> 14 </li>
-                                                <li> 15 </li>
+                                               
                                                 { nav !== 2
                                                 && <>
+                                                <li> 15 </li>
                                                 <li> 16 </li>
                                                 <li> 17 </li>
                                                 <li> 18 </li>
@@ -185,16 +186,15 @@ const Skills = (props) => {
                                             </div>
                                             :
                                             <div className='h-auto text-start  mx-2 pt-3'>
-                                                <p className='text-gray-500'> {'/* HR System */'} </p>
+                                                <p className='text-gray-500'> {'/* Keep Clone */'} </p>
                                                 <div className='flex'>
                                                     <p className='text-[#d19a66] md:mt-[25px] font-bold'> Goole_Keep_Clone = </p>
                                                     <p className='text-gray-300 ml-2 md:mt-[25px]'>  {'{'} </p>
                                                 </div>
                                                 <div className='flex'>
                                                     <p className='text-[#d19a66] ml-1 md:ml-7 mt-[15px] '> description: </p>
-                                                    <p className='text-gray-300 ml-1 mt-[15px] '> Simple Google Keep Clone </p>
+                                                    <p className='text-gray-300 ml-1 mt-[15px] '>A Simple Google Keep Clone </p>
                                                 </div>
-                                                {/* <p className='text-gray-300 ml-1 md:ml-7'>  and files. Secure file storage using Cloudinary. The system provides a mobile-friendly interface,</p> */}
                                                 <div className='flex'>
                                                     <p className='text-[#d19a66] ml-1 md:ml-7 mt-[17px] '>  built with: </p>
                                                     <p className='text-gray-300 ml-1 mt-[17px] '> React, Vite,</p>
