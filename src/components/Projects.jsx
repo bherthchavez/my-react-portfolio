@@ -4,6 +4,7 @@ import Acc5 from '../assets/el-5.PNG';
 import hr1 from '../assets/hr1.PNG';
 import hr2 from '../assets/hr2.PNG';
 import Folder from '../assets/folder.png';
+import Keep from '../assets/keep.png';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -21,6 +22,9 @@ const Skills = (props) => {
     };
     const handleNavS = () => {
         setNav(1);
+    };
+    const handleNavG = () => {
+        setNav(2);
     };
 
     return (
@@ -49,6 +53,11 @@ const Skills = (props) => {
                                     <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> HR System
                                 </span>
                             </div>
+                            <div className={nav === 2 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
+                                <span onClick={handleNavG} className={nav === 2 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
+                                    <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> Google Keep Clone
+                                </span>
+                            </div>
                         </div>
 
                         <div className="bg-[#343943]">
@@ -72,6 +81,8 @@ const Skills = (props) => {
                                                 <li> 13 </li>
                                                 <li> 14 </li>
                                                 <li> 15 </li>
+                                                { nav !== 2
+                                                && <>
                                                 <li> 16 </li>
                                                 <li> 17 </li>
                                                 <li> 18 </li>
@@ -79,6 +90,9 @@ const Skills = (props) => {
                                                 <li> 20 </li>
                                                 <li> 21 </li>
                                                 <li> 22 </li>
+                                                </>
+                                            
+                                                }
                                             </ul>
                                         </div>
                                         {nav === 0 ?
@@ -126,6 +140,7 @@ const Skills = (props) => {
 
                                             </div>
                                             :
+                                            nav === 1 ?
                                             <div className='h-auto text-start  mx-2 pt-3'>
                                                 <p className='text-gray-500'> {'/* HR System */'} </p>
                                                 <div className='flex'>
@@ -168,6 +183,32 @@ const Skills = (props) => {
                                                 </div>
 
                                             </div>
+                                            :
+                                            <div className='h-auto text-start  mx-2 pt-3'>
+                                                <p className='text-gray-500'> {'/* HR System */'} </p>
+                                                <div className='flex'>
+                                                    <p className='text-[#d19a66] md:mt-[25px] font-bold'> Goole_Keep_Clone = </p>
+                                                    <p className='text-gray-300 ml-2 md:mt-[25px]'>  {'{'} </p>
+                                                </div>
+                                                <div className='flex'>
+                                                    <p className='text-[#d19a66] ml-1 md:ml-7 mt-[15px] '> description: </p>
+                                                    <p className='text-gray-300 ml-1 mt-[15px] '> Simple Google Keep Clone </p>
+                                                </div>
+                                                {/* <p className='text-gray-300 ml-1 md:ml-7'>  and files. Secure file storage using Cloudinary. The system provides a mobile-friendly interface,</p> */}
+                                                <div className='flex'>
+                                                    <p className='text-[#d19a66] ml-1 md:ml-7 mt-[17px] '>  built with: </p>
+                                                    <p className='text-gray-300 ml-1 mt-[17px] '> React, Vite,</p>
+                                                </div>
+                                                <p className='text-gray-300 ml-1  md:ml-7 mt-[3px] '> TypeScript, Redux, Tailwind and Vercel </p>
+                                                <p className='text-gray-00 ml-3 mt-[10px] mb-10'>  {'};'} </p>
+
+                                                
+                                                <div className='flex flex-col'>
+                                                    <a href='https://react-ts-redux-todo.vercel.app' target='_blank' rel='noreferrer noopener'
+                                                        className='text-[#4888f0] hover:text-blue-600  font-bold'> View Live Demo </a>
+                                                </div>
+
+                                            </div>
                                         }
 
                                     </div>
@@ -175,8 +216,15 @@ const Skills = (props) => {
 
                                 <div className='h-auto m-2 md:m-0'>
                                     <div className='relative'>
+                                    { nav === 2 ?
+                                        
+                                        <img className='absolute top-10 w-17 h-17 md:rotate-10 rounded-2xl border-2 border-gray-700 md:scale-[85%] md:translate-x-20 md:skew-x-30 md:opacity-70 hover:opacity-100 hover:transform-none' src={Keep} alt="/" />
+                                        :
+                                        <>
                                         <img className='w-17 h-17 md:rotate-10 rounded-2xl border-2 border-gray-700 md:scale-[85%] md:translate-x-20 md:skew-x-30 md:opacity-70 hover:opacity-100 hover:transform-none' src={nav === 0 ? Acc1 : hr1} alt="/" />
                                         <img className='w-17 h-17 mx-0 absolute rounded-2xl border-2 border-gray-700 opacity-0 top-32 md:scale-75 md:translate-x-20 md:skew-x-30 md:opacity-70 md:hover:opacity-100 md:hover:transform-none' src={nav === 0 ? Acc5 : hr2} alt="/" />
+                                        </>
+                                    }
                                     </div>
 
                                 </div>
