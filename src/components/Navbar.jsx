@@ -38,7 +38,7 @@ const Navbar = () => {
   };
   window.addEventListener('scroll', changeNavbarColor);
 
-  const classNav = window.scrollY ? 'bg-[#373d49]  opacity-95 bg shadow-md' : null
+  const classNav = window.scrollY ? 'backdrop-blur-md bg-[#373d49]/30 bg shadow-md' : null
 
 
   return (
