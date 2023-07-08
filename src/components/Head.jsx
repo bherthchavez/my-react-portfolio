@@ -17,7 +17,7 @@ function Head() {
   return (
     <div name='home' className={'text-white'}>
       <div className={`max-w-[800px] mt-[-70px] w-full h-auto sm:h-screen mx-auto text-left flex flex-col justify-center px-4`}>
-        <img data-aos="flip-left" src={mypic} alt='Me' className='border-[#d19a66] border-2 mt-[200px] h-32 w-32 rounded-2xl shadow-2xl sepia-[80%] opacity-80  hover:sepia-0 hover:opacity-100 transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300' />
+        <img data-aos="flip-left" src={mypic} alt='Me' className='border-[#d19a66] border-2 mt-[200px] h-32 w-32 rounded-2xl shadow-2xl sepia-[80%] opacity-90  hover:sepia-0 hover:opacity-100 transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300' />
         <div className='max-w-[1240px]'>
           <div className='w-full my-4'>
             <p data-aos="fade-left"
@@ -58,8 +58,8 @@ function Head() {
         </div>
         <Link className='w-64 h-12 mb-16 md:mb-0' to='projects' smooth={true} duration={500}>
           <span data-aos="fade-left"
-            data-aos-delay="500" className='whitespace-nowrap md:text-base text-sm border-[1px] md:border-2 group px-6 flex justify-between text-center items-center border-[#d19a66] w-[270px] md:w-[300px] rounded-md font-medium  py-3 text-[#d19a66] hover:bg-[#343943] hover:border-[#343943] cursor-pointer'>
-            View Recent Projects!
+            data-aos-delay="500" className='whitespace-nowrap md:text-sm text-xs border md:border-1 group px-6 flex justify-between text-center items-center border-[#d19a66] w-[270px] md:w-[300px] rounded-md font-medium  py-3 text-[#d19a66] hover:bg-[#343943] hover:border-[#343943] cursor-pointer'>
+            Check out my recent Projects!
             <span className='group-hover:rotate-90 duration-300'>
               <HiArrowNarrowRight className='ml-3 ' />
             </span>
