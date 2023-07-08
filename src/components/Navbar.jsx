@@ -87,15 +87,15 @@ const Navbar = () => {
                 >
                   <div className="block w-8 absolute left-6 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <span
-                      className={`block absolute h-[0.100rem] w-6 text-white bg-current transform transition duration-500 ease-in-out ${nav ? 'rotate-45' : '-translate-y-1.5'
+                      className={`block absolute h-[0.100rem]  w-6 text-white bg-current transform transition duration-500 ease-in-out rounded-lg ${nav ? 'rotate-45' : '-translate-y-1.5'
                         }`}
                     ></span>
                     <span
-                      className={`block absolute h-[0.100rem] w-4 text-white bg-current transform transition duration-500 ease-in-out ${nav ? 'opacity-0' : ''
+                      className={`block absolute h-[0.100rem] w-4 text-white bg-current transform transition duration-500 ease-in-out rounded-lg ${nav ? 'opacity-0' : ''
                         }`}
                     ></span>
                     <span
-                      className={`block absolute h-[0.100rem] w-6 text-white bg-current transform transition duration-500 ease-in-out ${nav ? '-rotate-45' : 'translate-y-1.5'
+                      className={`block absolute h-[0.100rem] w-6 text-white bg-current transform transition duration-500 ease-in-out rounded-lg ${nav ? '-rotate-45' : 'translate-y-1.5'
                         }`}
                     ></span>
                   </div>
@@ -138,7 +138,7 @@ const Navbar = () => {
           </Link>
         </ul>
       </div>
-      <div onClick={handleNav} className={nav ? 'z-10 backdrop-blur-sm bg-[#373d49]/20 mt-16  fixed w-full h-full' : 'hidden'}></div>
+      <div onClick={handleNav} className={nav ? 'z-10 backdrop-blur-sm bg-[#373d49]/20 mt-24  fixed w-full h-full' : 'hidden'}></div>
 
     </>
 
