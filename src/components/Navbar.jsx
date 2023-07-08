@@ -79,7 +79,7 @@ const Navbar = () => {
           {/* <div data-aos="fade-left" data-aos-delay="2000" onClick={handleNav} className={nav ? 'block md:hidden  cursor-pointer' : 'block md:hidden  cursor-pointer'}>
             {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
           </div> */}
-            <div className="relative  block md:hidden">
+            <div data-aos="fade-left" data-aos-delay="2000" className="relative  block md:hidden">
               <nav>
                 <button
                   className="w-11 h-10 relative focus:outline-none"
