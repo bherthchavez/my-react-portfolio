@@ -6,7 +6,7 @@ import {ExpData} from "./ExpData";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const About = (props) => {
+const About = () => {
   useEffect(function () {
     Aos.init({ duration: 1000 });
   }, []);
@@ -30,7 +30,7 @@ const About = (props) => {
   };
 
   return (
-    <div name='experience' className={props.isNav ? 'w-full h-screen text-gray-300 blur-sm' : 'w-full h-screen text-gray-300'}>
+    <div name='experience' className={'w-full h-screen text-gray-300'}>
       <div className='max-w-[800px] mx-auto p-4 flex flex-col justify-center h-full'>
         <div data-aos="fade-up">
           <p className='text-2xl md:text-3xl font-bold inline'>Experience</p>

@@ -7,7 +7,7 @@ import { aboutMe } from "./ExpData";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-function Head(props) {
+function Head() {
 
   const [readMore, setReadMore] = useState(false)
 
@@ -15,7 +15,7 @@ function Head(props) {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <div name='home' className={props.isNav ? 'text-white blur-sm' : 'text-white'}>
+    <div name='home' className={'text-white'}>
       <div className={`max-w-[800px] mt-[-70px] w-full h-auto sm:h-screen mx-auto text-left flex flex-col justify-center px-4`}>
         <img data-aos="flip-left" src={mypic} alt='Me' className='border-[#d19a66] border-2 mt-[200px] h-32 w-32 rounded-2xl shadow-2xl sepia-[80%] opacity-80  hover:sepia-0 hover:opacity-100 transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300' />
         <div className='max-w-[1240px]'>

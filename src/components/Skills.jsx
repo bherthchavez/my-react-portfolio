@@ -29,14 +29,14 @@ import next from '../assets/nextjs.png';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const Skills = (props) => {
+const Skills = () => {
 
     useEffect(function () {
         Aos.init({ duration: 1000 });
       }, []);
 
     return (
-        <div name='skills' className={props.isNav ? 'w-full h-auto sm:h-screen text-gray-300 mt-24 md:mt-0 blur' : 'w-full h-auto sm:h-screen text-gray-300 mt-24 md:mt-0'}>
+        <div name='skills' className={'w-full h-auto sm:h-screen text-gray-300 mt-24 md:mt-0'}>
             <div className='max-w-[800px] mx-auto p-4 flex flex-col justify-center h-full'>
                 <div data-aos="fade-up">
                     <p className='text-2xl md:text-3xl font-bold inline'>Skills</p>

@@ -10,10 +10,10 @@ import { BsFillPersonLinesFill, BsInstagram } from 'react-icons/bs';
 import Resume from '../assets/Julbert Pruel.pdf';
 
 
-const About = (props) => {
+const About = () => {
   return (
 
-    <div className={props.isNav ? 'max-w-[800px] h-auto mx-auto p-4 blur text-xs lg:text-base' : 'max-w-[800px] h-auto mx-auto p-4 text-xs lg:text-base'}>
+    <div className={'max-w-[800px] h-auto mx-auto p-4 text-xs lg:text-base'}>
       <div className="flex mt-0 justify-center items-center mb-1">
         <span className="my-auto mx-2 text-gray-400 "> Build with: </span>
       </div>

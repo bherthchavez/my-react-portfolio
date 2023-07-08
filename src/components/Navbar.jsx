@@ -1,13 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+// import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { Link } from 'react-scroll';
-import Head from './Head';
-import About from './About';
-import Side from './Side'
-import Skills from './Skills'
-import Footer from './Footer'
-import Projects from './Projects'
-import Experience from './Experience'
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -38,56 +31,80 @@ const Navbar = () => {
   };
   window.addEventListener('scroll', changeNavbarColor);
 
-  const classNav = window.scrollY ? 'backdrop-blur-md bg-[#373d49]/30 bg shadow-md' : null
+  const classNav = window.scrollY ? 'backdrop-blur-md bg-[#373d49]/30 shadow-md' : ''
 
 
   return (
     <>
-      <div
-        className={colorChange ? `${classNav} z-20 fixed flex justify-between ease-in-out px-4 sm:px-8 duration-500 items-center  top-0 w-screen h-16 text-white ` : `fixed  z-20 flex justify-between items-center w-screen ease-out-in duration-500 top-[-100%] h-16 text-white`}
-      >
-      <div className='flex gap-2'>
-        <Link to='home' smooth={true} duration={500}>
-          <h1 data-aos="fade-down" data-aos-delay="1800" className='w-full text-2xl font-bold text-[#d19a66] cursor-pointer'>{!nav && 'bherth'}</h1>
-        </Link>
-      {/* <img data-aos="flip-left" src='https://www.codewars.com/users/bherthchavez/badges/small' alt='Me' className='' /> */}
-      </div>
-        <ul className='hidden md:flex'>
-          <li data-aos="fade-down" data-aos-delay="1900" className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer'>
-            <Link to='experience' smooth={true} duration={500}>
-              <span className='bg-left-bottom bg-gradient-to-r from-[#d19a66] to-[#d19a66] bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_3px] transition-all duration-500 ease-out'>
-                Experience
-              </span>
+      <div>
+        <div
+          className={colorChange ? `${classNav} z-20 fixed flex justify-between ease-in-out px-4 sm:px-8 duration-500 items-center  top-0 w-screen h-16 text-white ` : `z-20 fixed flex justify-between items-center w-screen ease-out-in duration-500 top-[-100%] h-16 text-white`}
+        >
+          <div className='flex gap-2'>
+            <Link to='home' smooth={true} duration={500}>
+              <h1 data-aos="fade-down" data-aos-delay="1800" className='w-full text-2xl font-bold text-[#d19a66] cursor-pointer'>{!nav && 'bherth'}</h1>
             </Link>
-          </li>
-          <li data-aos="fade-down" data-aos-delay="2000" className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer'>
-            <Link to='skills' smooth={true} duration={500}>
-              <span className='bg-left-bottom bg-gradient-to-r from-[#d19a66] to-[#d19a66] bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_3px] transition-all duration-500 ease-out'>
-                Skills
-              </span>
-            </Link>
-          </li>
-          <li data-aos="fade-down" data-aos-delay="2200" className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer'>
-            <Link to='projects' smooth={true} duration={500}>
-              <span className='bg-left-bottom bg-gradient-to-r from-[#d19a66] to-[#d19a66] bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_3px] transition-all duration-500 ease-out'>
-                Projects
-              </span>
-            </Link>
-          </li>
-          <li data-aos="fade-down" data-aos-delay="2400" className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer'>
-            <Link to='about' smooth={true} duration={500}>
-              <span className='bg-left-bottom bg-gradient-to-r from-[#d19a66] to-[#d19a66] bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_3px] transition-all duration-500 ease-out'>
-                Contact
-              </span>
-            </Link>
-          </li>
-        </ul>
-
-        <div data-aos="fade-left" data-aos-delay="2000" onClick={handleNav} className={nav ? 'block md:hidden  cursor-pointer' : 'block md:hidden  cursor-pointer'}>
-          {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
+            {/* <img data-aos="flip-left" src='https://www.codewars.com/users/bherthchavez/badges/small' alt='Me' className='' /> */}
+          </div>
+          <ul className='hidden md:flex'>
+            <li data-aos="fade-down" data-aos-delay="1900" className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer'>
+              <Link to='experience' smooth={true} duration={500}>
+                <span className='bg-left-bottom bg-gradient-to-r from-[#d19a66] to-[#d19a66] bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_3px] transition-all duration-500 ease-out'>
+                  Experience
+                </span>
+              </Link>
+            </li>
+            <li data-aos="fade-down" data-aos-delay="2000" className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer'>
+              <Link to='skills' smooth={true} duration={500}>
+                <span className='bg-left-bottom bg-gradient-to-r from-[#d19a66] to-[#d19a66] bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_3px] transition-all duration-500 ease-out'>
+                  Skills
+                </span>
+              </Link>
+            </li>
+            <li data-aos="fade-down" data-aos-delay="2200" className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer'>
+              <Link to='projects' smooth={true} duration={500}>
+                <span className='bg-left-bottom bg-gradient-to-r from-[#d19a66] to-[#d19a66] bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_3px] transition-all duration-500 ease-out'>
+                  Projects
+                </span>
+              </Link>
+            </li>
+            <li data-aos="fade-down" data-aos-delay="2400" className='p-4 flex group transition-all duration-300 ease-in-out cursor-pointer'>
+              <Link to='about' smooth={true} duration={500}>
+                <span className='bg-left-bottom bg-gradient-to-r from-[#d19a66] to-[#d19a66] bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_3px] transition-all duration-500 ease-out'>
+                  Contact
+                </span>
+              </Link>
+            </li>
+          </ul>
+          {/* <div data-aos="fade-left" data-aos-delay="2000" onClick={handleNav} className={nav ? 'block md:hidden  cursor-pointer' : 'block md:hidden  cursor-pointer'}>
+            {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
+          </div> */}
+            <div className="relative  block md:hidden">
+              <nav>
+                <button
+                  className="w-11 h-10 relative focus:outline-none"
+                  onClick={handleNav}
+                >
+                  <div className="block w-8 absolute left-6 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <span
+                      className={`block absolute h-[0.100rem] w-6 text-white bg-current transform transition duration-500 ease-in-out ${nav ? 'rotate-45' : '-translate-y-1.5'
+                        }`}
+                    ></span>
+                    <span
+                      className={`block absolute h-[0.100rem] w-4 text-white bg-current transform transition duration-500 ease-in-out ${nav ? 'opacity-0' : ''
+                        }`}
+                    ></span>
+                    <span
+                      className={`block absolute h-[0.100rem] w-6 text-white bg-current transform transition duration-500 ease-in-out ${nav ? '-rotate-45' : 'translate-y-1.5'
+                        }`}
+                    ></span>
+                  </div>
+                </button>
+              </nav>
+            </div>
         </div>
 
-        <ul className={nav ? 'fixed z-20 left-0 top-0 w-[70%] h-full border-r shadow-2xl border-r-gray-600 bg-[#373d49] ease-in-out duration-300 bg-opacity-[85%]' : 'ease-in-out duration-300 fixed left-[-100%]'}>
+        <ul className={nav ? 'fixed z-30 left-0 top-0 w-[70%] h-full border-r shadow-2xl border-r-gray-600 bg-[#373d49] ease-in-out duration-300 bg-opacity-[85%] text-white' : 'z-30 fixed  bg-opacity-[85%] h-full ease-in-out duration-300  left-[-100%] text-white'}>
           <Link to='home' smooth={true} duration={500}>
             <h1 onClick={handleNav} className='w-full text-xl font-bold mb-4 text-[#d19a66] px-4 cursor-pointer p-4 '>bherth</h1>
           </Link>
@@ -119,17 +136,10 @@ const Navbar = () => {
               </span>
             </li>
           </Link>
-
         </ul>
       </div>
-      <div onClick={handleNav} className={nav ? 'z-10 opacity-[20%] mt-[100px] fixed w-full h-full bg-gradient-to-r from-gray-700 via-gray-800 to-gray-700' : 'hidden'}></div>
-      <Side isNav={nav} />
-      <Head isNav={nav} />
-      <Experience isNav={nav} />
-      <Skills isNav={nav} />
-      <Projects isNav={nav} />
-      <About isNav={nav} />
-      <Footer isNav={nav} />
+      <div onClick={handleNav} className={nav ? 'z-10 backdrop-blur-sm bg-[#373d49]/20 mt-16  fixed w-full h-full' : 'hidden'}></div>
+
     </>
 
   );
