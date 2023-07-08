@@ -4,6 +4,12 @@ import { Link } from 'react-scroll';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+import {
+  FaGithub,
+} from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { BsFillPersonLinesFill, BsInstagram } from 'react-icons/bs';
+import Resume from '../assets/Julbert Pruel.pdf';
 
 const Navbar = () => {
 
@@ -104,7 +110,7 @@ const Navbar = () => {
             </div>
         </div>
 
-        <ul className={nav ? 'fixed z-30 left-0 top-0 w-[70%] h-full border-r shadow-2xl border-r-gray-600 backdrop-blur-sm bg-[#373d49]/50 ease-in-out duration-300 bg-opacity-[85%] text-white' : 'z-30 fixed  bg-opacity-[85%] h-full ease-in-out duration-300  left-[-100%] text-white'}>
+        <ul className={nav ? 'fixed z-30 left-0 top-0 w-[70%] h-full border-r shadow-2xl border-r-gray-600 backdrop-blur-xl bg-[#373d49]/10 ease-in-out duration-300 bg-opacity-[85%] text-white' : 'z-30 fixed w-[70%] top-0 h-full ease-in-out duration-300  left-[-100%]   text-white'}>
           <Link to='home' smooth={true} duration={500}>
             <h1 onClick={handleNav} className='w-full text-xl font-bold mb-4 text-[#d19a66] px-4 cursor-pointer p-4 '>bherth</h1>
           </Link>
@@ -136,6 +142,29 @@ const Navbar = () => {
               </span>
             </li>
           </Link>
+          <ul className="flex justify-center mt-8">
+          <li>
+            <a href='https://github.com/bherthchavez' target='_blank' rel='noreferrer noopener' className='transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300 flex justify-between items-center text-gray-300 hover:text-[#d19a66]'>
+              <FaGithub size={15} className='m-3 shadow-xl' />
+
+            </a>
+          </li>
+          <li>
+            <a href='https://www.linkedin.com/in/julbert-pruel-65a975129/' target='_blank' rel='noreferrer noopener' className='transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300 flex justify-between items-center  text-gray-300 hover:text-[#d19a66]'>
+              <FaLinkedinIn size={15} className='m-3 shadow-xl' />
+            </a>
+          </li>
+          <li>
+            <a href='https://www.instagram.com/bherth_chavez/' target='_blank' rel='noreferrer noopener' className='flex justify-between items-center  text-gray-300 hover:text-[#d19a66] transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300' >
+              <BsInstagram size={15} className='m-3 shadow-xl transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300' />
+            </a>
+          </li>
+          <li>
+            <a href={Resume} title='Download Resume' className='flex justify-between items-center  text-gray-300 hover:text-[#d19a66] transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300' download="Julbert Pruel.pdf">
+              <BsFillPersonLinesFill size={15} className='m-3 shadow-xl' />
+            </a>
+          </li>
+        </ul>
         </ul>
       </div>
       <div onClick={handleNav} className={nav ? 'z-10 backdrop-blur-sm bg-[#373d49]/20 mt-24  fixed w-full h-full' : 'hidden'}></div>
