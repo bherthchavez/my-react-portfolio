@@ -104,7 +104,7 @@ const Navbar = () => {
             </div>
         </div>
 
-        <ul className={nav ? 'fixed z-30 left-0 top-0 w-[70%] h-full border-r shadow-2xl border-r-gray-600 bg-[#373d49] ease-in-out duration-300 bg-opacity-[85%] text-white' : 'z-30 fixed  bg-opacity-[85%] h-full ease-in-out duration-300  left-[-100%] text-white'}>
+        <ul className={nav ? 'fixed z-30 left-0 top-0 w-[70%] h-full border-r shadow-2xl border-r-gray-600 backdrop-blur-sm bg-[#373d49]/50 ease-in-out duration-300 bg-opacity-[85%] text-white' : 'z-30 fixed  bg-opacity-[85%] h-full ease-in-out duration-300  left-[-100%] text-white'}>
           <Link to='home' smooth={true} duration={500}>
             <h1 onClick={handleNav} className='w-full text-xl font-bold mb-4 text-[#d19a66] px-4 cursor-pointer p-4 '>bherth</h1>
           </Link>
