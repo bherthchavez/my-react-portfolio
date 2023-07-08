@@ -56,10 +56,10 @@ function Head() {
             </div>
           }
         </div>
-        <Link className='w-64 h-12 mb-16 md:mb-0' to='experience' smooth={true} duration={500}>
+        <Link className='w-64 h-12 mb-16 md:mb-0' to='projects' smooth={true} duration={500}>
           <span data-aos="fade-left"
             data-aos-delay="500" className='whitespace-nowrap md:text-base text-sm border-[1px] md:border-2 group px-6 flex justify-between text-center items-center border-[#d19a66] w-[270px] md:w-[300px] rounded-md font-medium  py-3 text-[#d19a66] hover:bg-[#343943] hover:border-[#343943] cursor-pointer'>
-            Chek out my experience!
+            View Recent Projects!
             <span className='group-hover:rotate-90 duration-300'>
               <HiArrowNarrowRight className='ml-3 ' />
             </span>
