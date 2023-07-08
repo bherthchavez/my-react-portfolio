@@ -44,7 +44,7 @@ const Navbar = () => {
     <>
       <div>
         <div
-          className={colorChange ? `${classNav} z-20 fixed flex justify-between ease-in-out px-4 sm:px-8 duration-500 items-center  top-0 w-screen h-16 text-white ` : `z-20 fixed flex justify-between items-center w-screen ease-out-in duration-500 top-[-100%] h-16 text-white`}
+          className={colorChange ? `${classNav} z-20 fixed flex justify-between ease-in-out px-4 sm:px-8 duration-500 items-center top-0 w-screen h-16 text-white ` : `z-20 fixed  flex justify-between items-center w-screen ease-out-in duration-500 top-[-100%] h-16 text-white`}
         >
           <div className='flex gap-2'>
             <Link to='home' smooth={true} duration={500}>
@@ -90,15 +90,15 @@ const Navbar = () => {
               >
                 <div className="block w-8 absolute left-6 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
                   <span
-                    className={`block absolute h-[0.100rem]  w-6 text-white bg-current transform transition duration-500 ease-in-out rounded-lg ${nav ? 'rotate-45' : '-translate-y-1.5'
+                    className={`block absolute h-[0.100rem]  w-6 text-white bg-current transform transition duration-500 ease-in-out rounded-full ${nav ? 'rotate-45' : '-translate-y-1.5'
                       }`}
                   ></span>
                   <span
-                    className={`block absolute h-[0.100rem] w-4 text-white bg-current transform transition duration-500 ease-in-out rounded-lg ${nav ? 'opacity-0' : ''
+                    className={`block absolute h-[0.100rem] w-4 text-white bg-current transform transition duration-500 ease-in-out rounded-full ${nav ? 'opacity-0' : ''
                       }`}
                   ></span>
                   <span
-                    className={`block absolute h-[0.100rem] w-6 text-white bg-current transform transition duration-500 ease-in-out rounded-lg ${nav ? '-rotate-45' : 'translate-y-1.5'
+                    className={`block absolute h-[0.100rem] w-6 text-white bg-current transform transition duration-500 ease-in-out rounded-full ${nav ? '-rotate-45' : 'translate-y-1.5'
                       }`}
                   ></span>
                 </div>
@@ -169,7 +169,7 @@ const Navbar = () => {
 
         </div>
       </div>
-      <div onClick={handleNav} className={nav ? 'z-10 backdrop-blur-sm bg-[#373d49]/20 mt-24  fixed w-full h-full' : 'hidden'}></div>
+      <div onClick={handleNav} className={nav ? 'z-10 backdrop-blur-sm bg-[#373d49]/20 mt-[70px]  fixed w-full h-full' : 'hidden'}></div>
 
     </>
 
