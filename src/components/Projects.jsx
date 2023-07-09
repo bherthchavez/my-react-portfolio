@@ -204,7 +204,7 @@ const Skills = () => {
 
                                                 
                                                 <div className='flex flex-col'>
-                                                    <a href='https://react-ts-redux-todo.vercel.app' target='_blank' rel='noreferrer noopener'
+                                                    <a href='https://react-ts-redux-google-keep.vercel.app/' target='_blank' rel='noreferrer noopener'
                                                         className='text-[#4888f0] hover:text-blue-600 underline font-bold'> View Live Demo </a>
                                                 </div>
 
