@@ -197,9 +197,9 @@ const Skills = () => {
                                                 </div>
                                                 <div className='flex'>
                                                     <p className='text-[#d19a66] ml-1 md:ml-7 mt-[17px] '>  built with: </p>
-                                                    <p className='text-gray-300 ml-1 mt-[17px] '> React, Vite,</p>
+                                                    <p className='text-gray-300 ml-1 mt-[17px] '> React, Vite, TypeScript </p>
                                                 </div>
-                                                <p className='text-gray-300 ml-1  md:ml-7 mt-[3px] '> TypeScript, Redux, Tailwind and Vercel </p>
+                                                <p className='text-gray-300 ml-1  md:ml-7 mt-[3px] '>Redux, Tailwind, Firebase and Vercel </p>
                                                 <p className='text-gray-00 ml-3 mt-[10px] mb-10'>  {'};'} </p>
 
                                                 
