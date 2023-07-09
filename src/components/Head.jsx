@@ -42,20 +42,21 @@ function Head() {
           </div>
         </div>
         <div
-          className={readMore ? `text-gray-400 pt-2 pb-10 text-sm md:text-base` : `text-gray-500 pt-2 pb-10 text-sm md:text-base`}>
+          className={readMore ? `text-gray-400  pb-5 text-sm md:text-base` : `text-gray-500 pt-2 pb-10 text-sm md:text-base`}>
           {!readMore ?
             <span data-aos="fade-left"
                 data-aos-delay="400" >
-              <p >{aboutMe.substring(0, 155)}  <span onClick={() => setReadMore(!readMore)} className={!readMore ? `cursor-pointer text-sm font-extrabold text-gray-600 hover:text-[#f8a04d]` : `cursor-pointer text-sm font-extrabold text-gray-500 hover:text-[#f8a04d]`}>{!readMore ? ` ...show more` : ` show less`}</span></p>
+              <p className='text-sm'>{aboutMe.substring(0, 155)}  <span onClick={() => setReadMore(!readMore)} className={!readMore ? `cursor-pointer text-sm font-extrabold text-gray-600 hover:text-[#f8a04d]` : `cursor-pointer text-sm font-extrabold text-gray-500 hover:text-[#f8a04d]`}>{!readMore ? ` ...show more` : ` show less`}</span></p>
             </span>
             :
             <div>
-              <p>{aboutMe.substring(0, 529)}</p>
-              <p className='my-4'>{aboutMe.substring(529)}</p>
+              <p className='text-sm'>{aboutMe.substring(0, 529)}</p>
+              <p className='my-3 text-sm'>{aboutMe.substring(529)}</p>
               <p onClick={() => setReadMore(!readMore)} className={!readMore ? `cursor-pointer text-sm font-extrabold text-gray-600 hover:text-[#f8a04d]` : `cursor-pointer text-sm font-extrabold text-gray-500 hover:text-[#f8a04d]`}>{!readMore ? ` ...show more` : ` show less`}</p>
             </div>
           }
         </div>
+        
         <Link className='w-64 h-12 mb-16 md:mb-0' to='projects' smooth={true} duration={500}>
           <span data-aos="fade-left"
             data-aos-delay="500" className='whitespace-nowrap md:text-sm text-xs border md:border-1 group px-6 flex justify-between text-center items-center border-[#d19a66] w-[270px] md:w-[300px] rounded-md font-medium  py-3 text-[#d19a66] hover:bg-[#343943] hover:border-[#343943] cursor-pointer'>
@@ -66,6 +67,7 @@ function Head() {
 
           </span>
         </Link>
+        
       </div>
 
     </div>
