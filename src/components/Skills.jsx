@@ -26,6 +26,7 @@ import vercel from '../assets/vercel.jpg';
 import vite from '../assets/Vitejs.png';
 import ts from '../assets/Typescript.png';
 import next from '../assets/nextjs.png';
+import firebase from '../assets/firebase.png';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -79,6 +80,10 @@ const Skills = () => {
                                     <div className='flex ml-3 my-4'>
                                         <img className='w-7 h-7 mx-0' src={Mongo} alt="mongoDB icon" />
                                         <p className='ml-2 text-gray-400 pt-1'>mongoDB</p>
+                                    </div>
+                                    <div className='flex ml-3 my-4'>
+                                        <img className='w-7 h-7 mx-0' src={firebase} alt="firebase icon" />
+                                        <p className='ml-2 text-gray-400 pt-1'>firebase</p>
                                     </div>
 
                                     <div className='hidden md:flex items-center my-4  mt-6'>
