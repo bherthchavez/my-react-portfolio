@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Acc1 from '../assets/el-4.PNG';
-import Acc5 from '../assets/el-5.PNG';
 import hr1 from '../assets/hr1.PNG';
-import hr2 from '../assets/hr2.PNG';
 import Folder from '../assets/folder.png';
 import Keep from '../assets/keep.png';
+import TicTacHome from '../assets/TicTacHome.png';
+import TicTacGame from '../assets/TicTacGame.png';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -41,21 +41,51 @@ const Skills = () => {
                             <button className='bg-[#b98a2c] w-[15px] h-[15px] rounded-full font-medium ml-2 my-3'></button>
                             <button className='bg-[#258f33] w-[15px] h-[15px] rounded-full font-medium ml-2 my-3'></button>
                         </div>
-                        <div className="flex text-start bg-[#2b2f37]">
+                        <div className="hidden sm:flex text-start bg-[#2b2f37]">
                             <div className={nav === 0 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
                                 <span onClick={handleNavA} className={nav === 0 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : 'cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
-                                    <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> Accounting System
+                                    <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> Accounting
                                 </span>
                             </div>
 
                             <div className={nav === 1 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
                                 <span onClick={handleNavS} className={nav === 1 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
-                                    <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> HR System
+                                    <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> HR
                                 </span>
                             </div>
                             <div className={nav === 2 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
                                 <span onClick={handleNavG} className={nav === 2 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
                                     <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> Google Keep Clone
+                                </span>
+                            </div>
+                            <div className={nav === 3 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
+                                <span onClick={() => setNav(3)} className={nav === 3 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
+                                    <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> Tic Tac Toea
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <div className="flex sm:hidden text-start bg-[#2b2f37]">
+                            <div className={nav === 0 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
+                                <span onClick={handleNavA} className={nav === 0 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : 'cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
+                                    <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> Acc..
+                                </span>
+                            </div>
+
+                            <div className={nav === 1 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
+                                <span onClick={handleNavS} className={nav === 1 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
+                                    <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> HR..
+                                </span>
+                            </div>
+                            <div className={nav === 2 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
+                                <span onClick={handleNavG} className={nav === 2 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
+                                    <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> Goo..
+                                </span>
+                            </div>
+                            <div className={nav === 3 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
+                                <span onClick={() => setNav(3)} className={nav === 3 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
+                                    <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> Tic..
                                 </span>
                             </div>
                         </div>
@@ -80,19 +110,19 @@ const Skills = () => {
                                                 <li> 12 </li>
                                                 <li> 13 </li>
                                                 <li> 14 </li>
-                                               
-                                                { nav !== 2
-                                                && <>
-                                                <li> 15 </li>
-                                                <li> 16 </li>
-                                                <li> 17 </li>
-                                                <li> 18 </li>
-                                                <li> 19 </li>
-                                                <li> 20 </li>
-                                                <li> 21 </li>
-                                                <li> 22 </li>
-                                                </>
-                                            
+
+                                                {nav !== 2 && nav !== 3
+                                                    && <>
+                                                        <li> 15 </li>
+                                                        <li> 16 </li>
+                                                        <li> 17 </li>
+                                                        <li> 18 </li>
+                                                        <li> 19 </li>
+                                                        <li> 20 </li>
+                                                        <li> 21 </li>
+                                                        <li> 22 </li>
+                                                    </>
+
                                                 }
                                             </ul>
                                         </div>
@@ -142,90 +172,125 @@ const Skills = () => {
                                             </div>
                                             :
                                             nav === 1 ?
-                                            <div className='h-auto text-start  mx-2 pt-3'>
-                                                <p className='text-gray-500'> {'/* HR System */'} </p>
-                                                <div className='flex'>
-                                                    <p className='text-[#d19a66] md:mt-[25px] font-bold'> HR_Details = </p>
-                                                    <p className='text-gray-300 ml-2 md:mt-[25px]'>  {'{'} </p>
-                                                </div>
-                                                <div className='flex'>
-                                                    <p className='text-[#d19a66] ml-1 md:ml-7 mt-[15px] '> project-for: </p>
-                                                    <p className='text-gray-300 ml-1 mt-[15px] '> Alftoon Marketing, </p>
-                                                </div>
-                                                <div className='flex'>
-                                                    <p className='text-[#d19a66] ml-1 md:ml-7 mt-[3px] '> location: </p>
-                                                    <p className='text-gray-300 ml-1 mt-[3px] '> Doha, Qatar, </p>
-                                                </div>
-                                                <div className='flex'>
-                                                    <p className='text-[#d19a66] ml-1 md:ml-7 mt-[15px] '> description: </p>
-                                                    <p className='text-gray-300 ml-1 mt-[15px] '> Managing employee details   </p>
-                                                </div>
-                                                <p className='text-gray-300 ml-1 md:ml-7'>  and files. Secure file storage using Cloudinary. The system provides a mobile-friendly interface,</p>
-                                                <div className='flex'>
-                                                    <p className='text-[#d19a66] ml-1 md:ml-7 mt-[17px] '>  built with: </p>
-                                                    <p className='text-gray-300 ml-1 mt-[17px] '> MONGO DB, EXPRESS,</p>
-                                                </div>
-                                                <p className='text-gray-300 ml-1  md:ml-7 mt-[3px] '>  REACT, NODE, REDUX, TAILWIND. RENDER </p>
-                                                <p className='text-gray-00 ml-3 mt-[10px] mb-10'>  {'};'} </p>
+                                                <div className='h-auto text-start  mx-2 pt-3'>
+                                                    <p className='text-gray-500'> {'/* HR System */'} </p>
+                                                    <div className='flex'>
+                                                        <p className='text-[#d19a66] md:mt-[25px] font-bold'> HR_Details = </p>
+                                                        <p className='text-gray-300 ml-2 md:mt-[25px]'>  {'{'} </p>
+                                                    </div>
+                                                    <div className='flex'>
+                                                        <p className='text-[#d19a66] ml-1 md:ml-7 mt-[15px] '> project-for: </p>
+                                                        <p className='text-gray-300 ml-1 mt-[15px] '> Alftoon Marketing, </p>
+                                                    </div>
+                                                    <div className='flex'>
+                                                        <p className='text-[#d19a66] ml-1 md:ml-7 mt-[3px] '> location: </p>
+                                                        <p className='text-gray-300 ml-1 mt-[3px] '> Doha, Qatar, </p>
+                                                    </div>
+                                                    <div className='flex'>
+                                                        <p className='text-[#d19a66] ml-1 md:ml-7 mt-[15px] '> description: </p>
+                                                        <p className='text-gray-300 ml-1 mt-[15px] '> Managing employee details   </p>
+                                                    </div>
+                                                    <p className='text-gray-300 ml-1 md:ml-7'>  and files. Secure file storage using Cloudinary. The system provides a mobile-friendly interface,</p>
+                                                    <div className='flex'>
+                                                        <p className='text-[#d19a66] ml-1 md:ml-7 mt-[17px] '>  built with: </p>
+                                                        <p className='text-gray-300 ml-1 mt-[17px] '> MONGO DB, EXPRESS,</p>
+                                                    </div>
+                                                    <p className='text-gray-300 ml-1  md:ml-7 mt-[3px] '>  REACT, NODE, REDUX, TAILWIND. RENDER </p>
+                                                    <p className='text-gray-00 ml-3 mt-[10px] mb-10'>  {'};'} </p>
 
-                                                
-                                                <div className='flex flex-col'>
-                                                    <a href='https://hr-mern-frontend.onrender.com/' target='_blank' rel='noreferrer noopener'
-                                                        className='text-[#4888f0] hover:text-blue-600 underline font-bold'> View Live Demo </a>
-                                                    <p className='text-gray-500 font-light text-xs'>Use credential below to login:</p>
-                                                </div>
-                                                <div className='flex'>
-                                                    <p className='text-gray-500  mt-[10px] '>  Username: </p>
-                                                    <p className='text-gray-300 mt-[10px] '> admin </p>
-                                                </div>
-                                                <div className='flex'>
-                                                    <p className='text-gray-500  '>  Password: </p>
-                                                    <p className='text-gray-300 '> admin </p>
-                                                </div>
 
-                                            </div>
-                                            :
-                                            <div className='h-auto text-start  mx-2 pt-3'>
-                                                <p className='text-gray-500'> {'/* Keep Clone */'} </p>
-                                                <div className='flex'>
-                                                    <p className='text-[#d19a66] md:mt-[25px] font-bold'> Goole_Keep_Clone = </p>
-                                                    <p className='text-gray-300 ml-2 md:mt-[25px]'>  {'{'} </p>
-                                                </div>
-                                                <div className='flex'>
-                                                    <p className='text-[#d19a66] ml-1 md:ml-7 mt-[15px] '> description: </p>
-                                                    <p className='text-gray-300 ml-1 mt-[15px] '>A Simple Google Keep Clone </p>
-                                                </div>
-                                                <div className='flex'>
-                                                    <p className='text-[#d19a66] ml-1 md:ml-7 mt-[17px] '>  built with: </p>
-                                                    <p className='text-gray-300 ml-1 mt-[17px] '> React, Vite, TypeScript </p>
-                                                </div>
-                                                <p className='text-gray-300 ml-1  md:ml-7 mt-[3px] '>Redux, Tailwind, Firebase and Vercel </p>
-                                                <p className='text-gray-00 ml-3 mt-[10px] mb-10'>  {'};'} </p>
+                                                    <div className='flex flex-col'>
+                                                        <a href='https://hr-mern-frontend.onrender.com/' target='_blank' rel='noreferrer noopener'
+                                                            className='text-[#4888f0] hover:text-blue-600 underline font-bold'> View Live Demo </a>
+                                                        <p className='text-gray-500 font-light text-xs'>Use credential below to login:</p>
+                                                    </div>
+                                                    <div className='flex'>
+                                                        <p className='text-gray-500  mt-[10px] '>  Username: </p>
+                                                        <p className='text-gray-300 mt-[10px] '> admin </p>
+                                                    </div>
+                                                    <div className='flex'>
+                                                        <p className='text-gray-500  '>  Password: </p>
+                                                        <p className='text-gray-300 '> admin </p>
+                                                    </div>
 
-                                                
-                                                <div className='flex flex-col'>
-                                                    <a href='https://react-ts-redux-google-keep.vercel.app/' target='_blank' rel='noreferrer noopener'
-                                                        className='text-[#4888f0] hover:text-blue-600 underline font-bold'> View Live Demo </a>
                                                 </div>
+                                                : nav === 2 ?
+                                                    <div className='h-auto text-start  mx-2 pt-3'>
+                                                        <p className='text-gray-500'> {'/* Keep Clone */'} </p>
+                                                        <div className='flex'>
+                                                            <p className='text-[#d19a66] md:mt-[25px] font-bold'> Goole_Keep_Clone = </p>
+                                                            <p className='text-gray-300 ml-2 md:mt-[25px]'>  {'{'} </p>
+                                                        </div>
+                                                        <div className='flex'>
+                                                            <p className='text-[#d19a66] ml-1 md:ml-7 mt-[15px] '> description: </p>
+                                                            <p className='text-gray-300 ml-1 mt-[15px] '>A Simple Google Keep Clone </p>
+                                                        </div>
+                                                        <div className='flex'>
+                                                            <p className='text-[#d19a66] ml-1 md:ml-7 mt-[17px] '>  built with: </p>
+                                                            <p className='text-gray-300 ml-1 mt-[17px] '> React, Vite, TypeScript </p>
+                                                        </div>
+                                                        <p className='text-gray-300 ml-1  md:ml-7 mt-[3px] '>Redux, Tailwind, Firebase and Vercel </p>
+                                                        <p className='text-gray-00 ml-3 mt-[10px] mb-10'>  {'};'} </p>
 
-                                            </div>
+
+                                                        <div className='flex flex-col'>
+                                                            <a href='https://react-ts-redux-google-keep.vercel.app/' target='_blank' rel='noreferrer noopener'
+                                                                className='text-[#4888f0] hover:text-blue-600 underline font-bold'> View Live Demo </a>
+                                                        </div>
+
+                                                    </div>
+
+                                                    : <div className='h-auto text-start  mx-2 pt-3'>
+                                                        <p className='text-gray-500'> {'/* Simple Tic Tac Toe Game */'} </p>
+                                                        <div className='flex'>
+                                                            <p className='text-[#d19a66] md:mt-[25px] font-bold'> Tic_Tac_Toe_Game = </p>
+                                                            <p className='text-gray-300 ml-2 md:mt-[25px]'>  {'{'} </p>
+                                                        </div>
+                                                        <div className='flex'>
+                                                            <p className='text-[#d19a66] ml-1 md:ml-7 mt-[15px] '> description: </p>
+                                                            <p className='text-gray-300 ml-1 mt-[15px] '>A Simple Tic Tac Toe Game </p>
+                                                        </div>
+                                                        <div className='flex'>
+                                                            <p className='text-[#d19a66] ml-1 md:ml-7 mt-[17px] '>  built with: </p>
+                                                            <p className='text-gray-300 ml-1 mt-[17px] '> MERN Stack, Vite,  </p>
+                                                        </div>
+                                                        <p className='text-gray-300 ml-1  md:ml-7 mt-[3px] '>Tailwind, Vercel and Render  </p>
+                                                        <p className='text-gray-00 ml-3 mt-[10px] mb-10'>  {'};'} </p>
+
+
+                                                        <div className='flex flex-col'>
+                                                            <a href='https://tic-tac-toe-mern.vercel.app/' target='_blank' rel='noreferrer noopener'
+                                                                className='text-[#4888f0] hover:text-blue-600 underline font-bold'> View Live Demo </a>
+                                                        </div>
+
+                                                    </div>
                                         }
 
                                     </div>
                                 </div>
 
-                                <div className='h-auto m-2 md:m-0'>
-                                    <div className='relative'>
-                                    { nav === 2 ?
-                                        
-                                        <img className='sm:absolute sm:top-10 w-17 h-17 md:rotate-10 rounded-2xl border-2 border-gray-700 md:scale-[85%] md:translate-x-20 md:skew-x-30 md:opacity-70 hover:opacity-100 hover:transform-none' src={Keep} alt="/" />
-                                        :
+                                <div className={`flex justify-center m-auto ${nav === 3 && 'h-60'} gap-2 p-3`}>
+
+                                    {nav === 0 ?
                                         <>
-                                        <img className='w-17 h-17 md:rotate-10 rounded-2xl border-2 border-gray-700 md:scale-[85%] md:translate-x-20 md:skew-x-30 md:opacity-70 hover:opacity-100 hover:transform-none' src={nav === 0 ? Acc1 : hr1} alt="/" />
-                                        <img className='w-17 h-17 mx-0 absolute rounded-2xl border-2 border-gray-700 opacity-0 top-32 md:scale-75 md:translate-x-20 md:skew-x-30 md:opacity-70 md:hover:opacity-100 md:hover:transform-none' src={nav === 0 ? Acc5 : hr2} alt="/" />
+                                            <img className='rounded-md border-2 border-slate-700' src={Acc1} alt="/" />
                                         </>
+                                        : nav === 1 ?
+                                            <>
+                                                <img className='rounded-md border-2 border-slate-700' src={hr1} alt="/" />
+                                            </>
+
+                                            : nav === 2 ?
+                                                <img className='h-52 rounded-md border-2 border-slate-700' src={Keep} alt="/" />
+
+                                                : <>
+                                                    <img className='rounded-md border-2 border-slate-700' src={TicTacHome} alt="/" />
+                                                    <img className='rounded-md border-2 border-slate-700' src={TicTacGame} alt="/" />
+                                                </>
                                     }
-                                    </div>
+
+
+
 
                                 </div>
                             </div>
