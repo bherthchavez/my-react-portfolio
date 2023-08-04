@@ -9,16 +9,19 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="font-mono bg-[#282c34]">
-      <Navbar />
-      <Side />
-      <Head />
-      <Experience />
-      <Skills />
-      <Projects />
-      <About />
-      <Footer />
-    </div>
+    <>
+      <div className="font-mono bg-[#282c34]">
+        <Navbar />
+        <Side />
+        <Head />
+        <Experience />
+        <Skills />
+        <Projects />
+        <About />
+        <Footer />
+      </div>
+      
+    </>
   );
 }
 

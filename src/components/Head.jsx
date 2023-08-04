@@ -14,8 +14,10 @@ function Head() {
   useEffect(function () {
     Aos.init({ duration: 1000 });
   }, []);
+
   return (
     <div name='home' className={'text-white'}>
+
       <div className={`max-w-[800px] mt-[-70px] w-full h-auto sm:h-screen mx-auto text-left flex flex-col justify-center px-4`}>
         <img data-aos="flip-left" src={mypic} alt='Me' className='border-[#d19a66] border-2 mt-[200px] h-32 w-32 rounded-2xl shadow-2xl sepia-[80%] opacity-90  hover:sepia-0 hover:opacity-100 transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300' />
         <div className='max-w-[1240px]'>
@@ -44,17 +46,17 @@ function Head() {
         <div
           className={readMore ? `text-gray-400  pb-5 text-sm md:text-base` : `text-gray-500 pt-2 pb-10 text-sm md:text-base`}>
           {!readMore ?
-            <span data-aos="fade-left"
+            <h1 data-aos="fade-left"
                 data-aos-delay="400" >
               <p className='text-sm'>{aboutMe.substring(0, 210)}  <span onClick={() => setReadMore(!readMore)} className={!readMore ? `cursor-pointer text-sm font-extrabold text-gray-600 hover:text-[#f8a04d]` : `cursor-pointer text-sm font-extrabold text-gray-500 hover:text-[#f8a04d]`}>{!readMore ? ` ...show more` : ` show less`}</span></p>
-            </span>
+            </h1>
             :
-            <div>
+            <h1>
               <p className='text-sm'>{aboutMe.substring(0, 312)}</p>
               <p className='my-3 text-sm'>{aboutMe.substring(313, 566)}</p>
               <p className='my-3 text-sm'>{aboutMe.substring(566)}</p>
               <p onClick={() => setReadMore(!readMore)} className={!readMore ? `cursor-pointer text-sm font-extrabold text-gray-600 hover:text-[#f8a04d]` : `cursor-pointer text-sm font-extrabold text-gray-500 hover:text-[#f8a04d]`}>{!readMore ? ` ...show more` : ` show less`}</p>
-            </div>
+            </h1>
           }
         </div>
         
