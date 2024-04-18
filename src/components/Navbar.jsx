@@ -17,6 +17,7 @@ const Navbar = () => {
   const handleNav = () => {
     setNav(!nav);
   };
+  
   useEffect(function () {
     Aos.init({ duration: 1000 });
   }, []);
