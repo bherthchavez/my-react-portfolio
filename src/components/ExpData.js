@@ -1,6 +1,6 @@
 export const ExpData = [
     {
-        position: 'Senior Business Systems Analyst',
+        position: 'Senior_Business_Systems_Analyst',
         companyName: 'Optum Global Solutions Philippines INC.',
         website: 'https://www.optum.com/',
         date: 'September 2023 – Present',
