@@ -1,6 +1,14 @@
 export const ExpData = [
     {
-        position: 'Graphic-Web-Developer',
+        position: 'Senior Business Systems Analyst',
+        companyName: 'Optum Global Solutions Philippines INC.',
+        website: 'https://www.optum.com/',
+        date: 'September 2023 – Present',
+        location: 'Taguig, Philippines',
+        jd: "Developed adaptive forms and provide support, gather requirements, maintain a working knowledge of healthcare forms.",
+    },
+    {
+        position: 'Graphic_Web_Developer',
         companyName: 'ALFTOON MARKETING',
         website: 'https://alftoon.qa/',
         date: 'November 2021 – 2023',
@@ -8,7 +16,7 @@ export const ExpData = [
         jd: "Developed and design company website and e-commerce using WordPress. Designing landing page for every workshop and maintained the design of e-commerce mobile app using react native"
     },
     {
-        position: 'Jr-Business-Analyst',
+        position: 'Jr_Business_Analyst',
         companyName: 'Smart Management IT Solution',
         website: 'https://www.smartmanagement-its.com/',
         date: 'August 2018 – November 2021',
@@ -16,7 +24,7 @@ export const ExpData = [
         jd: 'Worked with a team of web and mobile developers to build a marketing presentation for the cloud-based ERP. Creating and designing user’s manual and documents for every software product'
     },
     {
-        position: 'Graphic-Web-Developer',
+        position: 'Graphic_Web_Developer',
         companyName: 'Blue Media Networks',
         website: '/',
         date: 'July 2018 – 2018',
@@ -24,7 +32,7 @@ export const ExpData = [
         jd: 'Developed and maintained code for in-house and client websites primarily using HTML, CSS, JavaScript and jQuery. Communicate and collaborate with multi-disciplinary teams of engineers, designers and Project Manager on a daily basis'
     },
     {
-        position: 'System-Admin',
+        position: 'System_Admin',
         companyName: 'deugro Qatar LLC',
         website: 'https://deugro.com/contact/qatar/',
         date: 'December 2016 – 2017',
@@ -32,7 +40,7 @@ export const ExpData = [
         jd: 'Monitoring and maintaining employee systems. Providing system support, including procedural documentation and relevant reports'
     },
     {
-        position: 'Software-Developer',
+        position: 'Software_Developer',
         companyName: 'Gatessoft Corporation',
         website: '/',
         date: 'October 2015 – 2016',

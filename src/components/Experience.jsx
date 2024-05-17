@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Folder from '../assets/folder.png';
 import ExpContent from "./ExpContent";
-import {ExpData} from "./ExpData";
+import { ExpData } from "./ExpData";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -13,20 +13,24 @@ const About = () => {
 
   const [nav, setNav] = useState(0);
 
-  const handleNavA = () => {
+  const handleNavO = () => {
     setNav(0);
   };
-  const handleNavS = () => {
+
+  const handleNavA = () => {
     setNav(1);
   };
-  const handleNavB = () => {
+  const handleNavS = () => {
     setNav(2);
   };
-  const handleNavD = () => {
+  const handleNavB = () => {
     setNav(3);
   };
-  const handleNavG = () => {
+  const handleNavD = () => {
     setNav(4);
+  };
+  const handleNavG = () => {
+    setNav(5);
   };
 
   return (
@@ -45,61 +49,74 @@ const About = () => {
             </div>
             <div className="hidden md:flex text-start bg-[#2b2f37]">
               <div className={nav === 0 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
-                <span onClick={handleNavA} className={nav === 0 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : 'cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
+                <span onClick={handleNavO} className={nav === 0 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : 'cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
+                  <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> Optum
+                </span>
+              </div>
+              <div className={nav === 1 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
+                <span onClick={handleNavA} className={nav === 1 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : 'cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
                   <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> Alftoon
                 </span>
               </div>
 
-              <div className={nav === 1 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
-                <span onClick={handleNavS} className={nav === 1 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
+              <div className={nav === 2 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
+                <span onClick={handleNavS} className={nav === 2 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
                   <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> SMIT
                 </span>
               </div>
-              <div className={nav === 2 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
-                <span onClick={handleNavB} className={nav === 2 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
+              <div className={nav === 3 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
+                <span onClick={handleNavB} className={nav === 3 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
                   <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> Blue Media
                 </span>
               </div>
-              <div className={nav === 3 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
-                <span onClick={handleNavD} className={nav === 3 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
+              <div className={nav === 4 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
+                <span onClick={handleNavD} className={nav === 4 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
                   <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> Deugro
                 </span>
               </div>
-              <div className={nav === 4 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-gray-900 hover:border-gray-700'}>
-                <span onClick={handleNavG} className={nav === 4 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
+              <div className={nav === 5 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-gray-900 hover:border-gray-700'}>
+                <span onClick={handleNavG} className={nav === 5 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
                   <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> Gatessoft
                 </span>
               </div>
             </div>
 
             <div className="flex md:hidden text-start text-xs text-gray-500 bg-[#2b2f37]">
-              <div className={nav === 0 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
-                <span onClick={handleNavA} className={nav === 0 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : 'cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
-                  <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> A..
-                </span>
-              </div>
 
-              <div className={nav === 1 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
-                <span onClick={handleNavS} className={nav === 1 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
-                  <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> S..
-                </span>
-              </div>
-              <div className={nav === 2 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
-                <span onClick={handleNavB} className={nav === 2 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
-                  <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> B..
-                </span>
-              </div>
-              <div className={nav === 3 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
-                <span onClick={handleNavD} className={nav === 3 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
-                  <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> D..
-                </span>
-              </div>
-              <div className={nav === 4 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px]  border-gray-900 hover:border-gray-700'}>
-                <span onClick={handleNavG} className={nav === 4 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
-                  <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> G..
-                </span>
-              </div>
+              <div className="flex md:hidden text-start text-xs text-gray-500 bg-[#2b2f37]">
+                <div className={nav === 0 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
+                  <span onClick={handleNavO} className={nav === 0 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : 'cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
+                    <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> O..
+                  </span>
+                </div>
+                <div className={nav === 1 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
+                  <span onClick={handleNavA} className={nav === 1 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : 'cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
+                    <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> A..
+                  </span>
+                </div>
 
+                <div className={nav === 2 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
+                  <span onClick={handleNavS} className={nav === 2 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
+                    <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> S..
+                  </span>
+                </div>
+                <div className={nav === 3 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
+                  <span onClick={handleNavB} className={nav === 3 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
+                    <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> B..
+                  </span>
+                </div>
+                <div className={nav === 4 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px] border-r-[1px] border-gray-900 hover:border-gray-700'}>
+                  <span onClick={handleNavD} className={nav === 4 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
+                    <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> D..
+                  </span>
+                </div>
+                <div className={nav === 5 ? 'flex-grow border-b-[1px] border-gray-400' : 'flex-grow border-y-[1px]  border-gray-900 hover:border-gray-700'}>
+                  <span onClick={handleNavG} className={nav === 5 ? 'text-xs uppercase px-3 py-[13px] flex hover:bg-[#343943] bg-[#343943]  cursor-pointer' : ' cursor-pointer text-xs uppercase border-b-2 border-transparent px-3 py-3 flex hover:bg-[#3d434e] bg-[#21252b]'}>
+                    <img className='w-[14px] h-[14px] mr-2 opacity-60' src={Folder} alt="HTML icon" /> G..
+                  </span>
+                </div>
+
+              </div>
             </div>
             <div className="bg-[#343943]">
               <div className="text-start text-sm">
@@ -139,9 +156,11 @@ const About = () => {
                     />
                   </div>
 
-                 </div>
+                </div>
               </div>
             </div>
+
+
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import React from "react";
 export default function ExpContent(props){
     return (
 
-        <div className='h-auto text-start  mx-2 pt-3'>
+        <div className='h-auto text-start  mx-2 pt-3 pr-5 sm:pr-10'>
         <div className='flex'>
           <p className='text-[#4888f0] md:mt-[45px]'> {props.position}: </p>
           <p className='text-gray-300 ml-2 md:mt-[45px]'>  {'{'} </p>
