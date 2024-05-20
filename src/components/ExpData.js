@@ -5,7 +5,7 @@ export const ExpData = [
         website: 'https://www.optum.com/',
         date: 'September 2023 – Present',
         location: 'Taguig, Philippines',
-        jd: "Developed and design adaptive forms and provide support, gather requirements, maintain a working knowledge of healthcare forms.",
+        jd: "Developed and designed adaptive forms, provided support, gathered requirements, and maintained a working knowledge of healthcare forms.",
     },
     {
         position: 'Graphic_Web_Developer',
@@ -13,7 +13,7 @@ export const ExpData = [
         website: 'https://alftoon.qa/',
         date: 'November 2021 – 2023',
         location: 'Doha, Qatar',
-        jd: "Developed and design company website and e-commerce using WordPress. Designing landing page for every workshop and maintained the design of e-commerce mobile app using react native"
+        jd: "Developed and designed company website and e-commerce using WordPress. Designing landing page for every workshop and maintained the design of e-commerce mobile app using react native"
     },
     {
         position: 'Jr_Business_Analyst',
