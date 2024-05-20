@@ -5,7 +5,7 @@ export const ExpData = [
         website: 'https://www.optum.com/',
         date: 'September 2023 – Present',
         location: 'Taguig, Philippines',
-        jd: "Developed adaptive forms and provide support, gather requirements, maintain a working knowledge of healthcare forms.",
+        jd: "Developed and design adaptive forms and provide support, gather requirements, maintain a working knowledge of healthcare forms.",
     },
     {
         position: 'Graphic_Web_Developer',
