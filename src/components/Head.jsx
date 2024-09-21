@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Typed from 'react-typed';
+import  ReactTyped  from 'react-typed';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
 import mypic from '../assets/mypic.png';
@@ -30,7 +30,7 @@ function Head() {
               <p className='md:text-6xl sm:text-2xl text-3xl py-2 font-bold text-WHITE'>
                 &gt;
               </p>
-              <Typed
+              <ReactTyped
                 className='md:text-6xl text-3xl font-bold md:pl-4 pl-2 '
                 strings={['Julbert Pruel.']}
                 typeSpeed={100}

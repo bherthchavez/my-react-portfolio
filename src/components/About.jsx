@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Typed from 'react-typed';
+import  ReactTyped from 'react-typed';
 import Resume from '../assets/Julbert Pruel.pdf';
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -74,7 +74,7 @@ const About = () => {
                 <p className="font-light text-[#d19a66] ml-3"> 'BS in Information Technology - Asian Development Foundation College of Tacloban City, Philippines'</p>
                 <div className='flex'>
                   <p className="mt-2 text-gray-300 pr-2">&gt;  </p>
-                  <Typed
+                  <ReactTyped 
                     className='mt-2 font-light text-gray-300'
                     strings={['Hire Me  ↓ ↓', 'Contact Me  ↓ ↓', 'Say Hello  ↓ ↓']}
                     typeSpeed={100}
