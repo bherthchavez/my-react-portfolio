@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import  ReactTyped from 'react-typed';
+import  {ReactTyped} from 'react-typed';
 import Resume from '../assets/Julbert Pruel.pdf';
 import Aos from "aos";
 import "aos/dist/aos.css";

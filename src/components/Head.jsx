@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import  ReactTyped  from 'react-typed';
+import  {ReactTyped}  from 'react-typed';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
 import mypic from '../assets/mypic.png';
