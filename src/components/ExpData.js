@@ -5,7 +5,7 @@ export const ExpData = [
         website: 'https://www.optum.com/',
         date: 'September 2023 – Present',
         location: 'Taguig, Philippines',
-        jd: "Developed and designed adaptive forms, provided support, gathered requirements, and maintained a working knowledge of healthcare forms.",
+        jd: "Designed and developed adaptive forms to streamline healthcare processes, improving usability and compliance. Collaborated with stakeholders to gather requirements, ensuring accurate translation into technical solutions. Provided ongoing system support and documentation to enhance operational efficiency.",
     },
     {
         position: 'Graphic_Web_Developer',
@@ -13,15 +13,15 @@ export const ExpData = [
         website: 'https://alftoon.qa/',
         date: 'November 2021 – 2023',
         location: 'Doha, Qatar',
-        jd: "Developed and designed company website and e-commerce using WordPress. Designing landing page for every workshop and maintained the design of e-commerce mobile app using react native"
+        jd: "Developed and maintained the company website and e-commerce platform using WordPress. Designed and launched high-converting landing pages for workshops, increasing engagement and registrations. Supported the mobile team by improving the UI/UX of the React Native e-commerce app, enhancing customer satisfaction."
     },
     {
-        position: 'Jr_Business_Analyst',
+        position: 'Junior_Business_Analyst',
         companyName: 'Smart Management IT Solution',
         website: 'https://www.smartmanagement-its.com/',
         date: 'August 2018 – November 2021',
         location: 'Doha, Qatar',
-        jd: 'Worked with a team of web and mobile developers to build a marketing presentation for the cloud-based ERP. Creating and designing user’s manual and documents for every software product'
+        jd: 'Partnered with developers to design and deliver a cloud-based ERP marketing solution, showcasing product features to clients. Produced detailed user manuals and technical documentation, enabling smoother client onboarding and adoption. Gathered business requirements and translated them into functional specifications for software products.'
     },
     {
         position: 'Graphic_Web_Developer',
@@ -29,7 +29,7 @@ export const ExpData = [
         website: '/',
         date: 'July 2018 – 2018',
         location: 'Doha, Qatar',
-        jd: 'Developed and maintained code for in-house and client websites primarily using HTML, CSS, JavaScript and jQuery. Communicate and collaborate with multi-disciplinary teams of engineers, designers and Project Manager on a daily basis'
+        jd: 'Built and maintained in-house and client websites using HTML, CSS, JavaScript, and jQuery. Collaborated daily with engineers, designers, and project managers to deliver digital solutions on schedule. Enhanced website performance and design, contributing to improved client satisfaction.'
     },
     {
         position: 'System_Admin',
@@ -37,7 +37,7 @@ export const ExpData = [
         website: 'https://deugro.com/contact/qatar/',
         date: 'December 2016 – 2017',
         location: 'Doha, Qatar',
-        jd: 'Monitoring and maintaining employee systems. Providing system support, including procedural documentation and relevant reports'
+        jd: 'Monitored and maintained employee IT systems, ensuring uptime and security. Delivered system support, documentation, and reporting, improving internal processes. Assisted teams with IT troubleshooting, increasing productivity across departments.'
     },
     {
         position: 'Software_Developer',
@@ -45,13 +45,13 @@ export const ExpData = [
         website: '/',
         date: 'October 2015 – 2016',
         location: 'Makati City, Philippines',
-        jd: 'Developed and maintained inventory and fixed assets software solutions. Proposed and implemented features for other system software.'
+        jd: 'Developed and maintained inventory and fixed asset management systems, enhancing business operations. Proposed and implemented new features that improved system usability. Collaborated with senior developers to deliver scalable software solutions.'
     }
 
 
 ];
 
-export const aboutMe = `Welcome to my web portfolio! With 6 years of experience in IT and Software Development Company, I am a passionate professional who specializes in designing and building both static and dynamic web applications. My expertise extends beyond development, as I also possess experience in graphic and UI/UX designing.
+export const aboutMe = `Welcome to my web portfolio! With 8 years of experience in IT and Software Development Company, I am a passionate professional who specializes in designing and building both static and dynamic web applications. My expertise extends beyond development, as I also possess experience in graphic and UI/UX designing.
 
 Proficient in the MERN stack, I am particularly skilled in React.js with TypeScript. I am dedicated to crafting exceptional user experiences, harmoniously blending aesthetics and functionality to create visually stunning and user-friendly interfaces.
 

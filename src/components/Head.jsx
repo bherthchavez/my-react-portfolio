@@ -19,7 +19,7 @@ function Head() {
     <div name='home' className={'text-white'}>
 
       <div className={`max-w-[800px] mt-[-70px] w-full h-auto sm:h-screen mx-auto text-left flex flex-col justify-center px-4`}>
-        <img data-aos="flip-left" src={mypic} alt='Me' className='border-[#d19a66] border-2 mt-[200px] h-32 w-32 rounded-2xl shadow-2xl sepia-[80%] opacity-90  hover:sepia-0 hover:opacity-100 transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300' />
+        <img data-aos="flip-left" src={mypic} alt='Me' className='border-[#d19a66] border-2 mt-[200px] h-36 w-36 rounded-2xl shadow-2xl' />
         <div className='max-w-[1240px]'>
           <div className='w-full my-4'>
             <p data-aos="fade-left"
