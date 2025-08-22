@@ -31,7 +31,7 @@ const About = () => {
                   <p className="mt-2 text-gray-300 pr-2">&gt;  </p>
                   <p className="mt-2 font-light text-gray-300">bherth.currentLocation</p>
                 </div>
-                <p className="font-light text-[#d19a66] ml-3">'Makati City, Philippines'</p>
+                <p className="font-light text-[#d19a66] ml-3">'Calamba, Laguna, Philippines'</p>
                 <div className='flex'>
                   <p className="mt-2 text-gray-300 pr-2">&gt;  </p>
                   <p className="mt-2 font-light text-gray-300">bherth.contactInfo</p>
@@ -57,14 +57,14 @@ const About = () => {
                   <p className="mt-2 text-gray-300 pr-2">&gt;  </p>
                   <p className="mt-2 font-light text-gray-300">bherth.contact.no</p>
                 </div>
-                <p className="font-light text-[#d19a66] ml-3">'09270075145'</p>
+                <p className="font-light text-[#d19a66] ml-3">'0927-007-5145'</p>
                 <div className='flex'>
                   <p className="mt-2 text-gray-300 pr-2">&gt;  </p>
                   <p className="mt-2 font-light text-gray-300">bherth.resume</p>
                 </div>
                 <div className="flex">
                   <p className="font-light text-[#d19a66] ml-3">'</p>
-                  <a download="resume.pdf" target="_blank" rel='noreferrer noopener' href={Resume} className="font-light text-[#d19a66] hover:text-blue-500">Julbert.pdf</a>
+                  <a download="julbert_pruel_resume.pdf" target="_blank" rel='noreferrer noopener' href={Resume} className="font-light text-[#d19a66] hover:text-blue-500">Julbert.pdf</a>
                   <p className="font-light text-[#d19a66]">',</p>
                 </div>
                 <div className='flex'>

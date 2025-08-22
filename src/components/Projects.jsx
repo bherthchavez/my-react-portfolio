@@ -5,7 +5,8 @@ import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 
 import Folder from '../assets/folder.png';
-import Acc1 from '../assets/el-4.PNG';
+import AccDashboard from '../assets/projects/accounting_dash.png';
+import AccInv from '../assets/projects/accounting_inv.png';
 import hr1 from '../assets/hr1.PNG';
 import Keep from '../assets/keep.png';
 import PosLanding from '../assets/projects/pos_landing.png';
@@ -48,7 +49,7 @@ const PROJECTS = [
     label: 'Accounting',
     short: 'Acc..',
     timeline: 22,
-    images: [{ src: Acc1, alt: 'Accounting App Screenshot' }],
+    images: [{ src: AccDashboard, alt: 'Accounting App Screenshot' }, { src: AccInv, alt: 'Accounting App Screenshot' }],
     details: () => (
       <>
         {/* EL - Accounting Cloud Based */}
