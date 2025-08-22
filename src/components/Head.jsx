@@ -39,7 +39,7 @@ function Head() {
             <p data-aos="fade-left"
               data-aos-delay="300"
               className='text-[#d19a66] font-bold md:text-lg uppercase'>
-              MERN Full Stack Web Developer 
+              Web Application Engineer 
             </p>
           </div>
         </div>
