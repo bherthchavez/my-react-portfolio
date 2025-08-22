@@ -52,9 +52,10 @@ function Head() {
             </h1>
             :
             <h1>
-              <p className='text-sm'>{aboutMe.substring(0, 312)}</p>
-              <p className='my-3 text-sm'>{aboutMe.substring(313, 566)}</p>
-              <p className='my-3 text-sm'>{aboutMe.substring(566)}</p>
+              <p className='text-sm'>{aboutMe.substring(0, 353)}</p>
+              <p className='my-3 text-sm'>{aboutMe.substring(354, 553)}</p>
+              <p className='my-3 text-sm'>{aboutMe.substring(554, 872)}</p>
+              <p className='my-3 text-sm'>{aboutMe.substring(873)}</p>
               <p onClick={() => setReadMore(!readMore)} className={!readMore ? `cursor-pointer text-sm font-extrabold text-gray-600 hover:text-[#f8a04d]` : `cursor-pointer text-sm font-extrabold text-gray-500 hover:text-[#f8a04d]`}>{!readMore ? ` ...show more` : ` show less`}</p>
             </h1>
           }
